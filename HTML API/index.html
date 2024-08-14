@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해양수산통계공유서비스</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/layout.js"></script>
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+   <div class="wrap" id="wrap">
+            <!-- 상단 배너영역  -->
+            <div id="header-top">
+                <div class="toggle-wrap">
+                    <div class="toggle-head">
+                        <div class="inner">
+                            <span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+                            <button type="button" class="btn btn-txt ico-arr-down toggle-btn xsm">공식 누리집 확인방법<span
+                                    class="sr-only">열기</span></button>
+                        </div>
+                    </div>
+                    <div class="toggle-body">
+                        <div class="inner">
+                            <dl class="dl nuri">
+                                <dt class="dt">공식 누리집 주소 확인하기</dt>
+                                <dd class="dd">go.kr 주소를 사용하는 누리집은 대한민국 정부기관이 관리하는 누리집입니다.<br class="br">이밖에 or.kr 또는 .kr등 다른 도메인 주소를
+                                    사용하고
+                                    있다면 아래 URL에서
+                                    도메인 주소를 확인해
+                                    보세요</dd>
+                                <dd><a href="/search.do" class="btn btn-txt ico-go xsm" target="_blank">운영중인 공식 누리집보기</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //상단 배너영역  -->
+
+            <!-- 헤더 영역 -->
+            <header id="header">
+                <div class="header-in">
+                    <div class="header-body">
+                        <div class="inner">
+                            <div class="hade-in">
+                                <h1 class="logo">
+                                    <a href="main.html">
+                                        <img src="img/common/foot_logo.png" alt="해양수산통계">
+                                    </a>
+                                </h1>
+                                <!-- 메뉴 -->
+                                <nav class="head-gnb">
+                                    <div class="inner">
+                                        <ul class="gnb">
+                                            <li class="depth-1">
+                                                <a href="#" class="link"><span class="text">소개 및 이용방법</span></a>
+                                                <div class="depth-2">
+                                                    <div class="depth-2-wrap">
+                                                        <ul class="depth-2-ul">
+                                                            <li><a href="#" class="link"><span class="text small">서비스소개</span></a></li>
+                                                            <li><a href="#" class="link"><span class="text small">통계정보활용약관</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="depth-1">
+                                                <a href="#" class="link"><span class="text">활용신청활용신청</span></a>
+                                                <div class="depth-2">
+                                                    <div class="depth-2-wrap">
+                                                        <ul class="depth-2-ul">
+                                                            <li><a href="#" class="link"><span class="text small">활용신청</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="depth-1">
+                                                <a href="#" class="link"><span class="text">개발가이드가이드</span></a>
+                                                <div class="depth-2">
+                                                    <div class="depth-2-wrap">
+                                                        <ul class="depth-2-ul">
+                                                            <li><a href="#" class="link"><span class="text small">통계목록</span></a></li>
+                                                            <li><a href="#" class="link"><span class="text small">통계자료</span></a></li>
+                                                            <li><a href="#" class="link"><span class="text small">통계설명</span></a></li>
+                                                            <li><a href="#" class="link"><span class="text small">통계표설명</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="depth-1">
+                                                <a href="#" class="link"><span class="text">커뮤니티커뮤니티</span></a>
+                                                <div class="depth-2">
+                                                    <div class="depth-2-wrap">
+                                                        <ul class="depth-2-ul">
+                                                            <li><a href="#" class="link"><span class="text small">공지사항</span></a></li>
+                                                            <li><a href="#" class="link"><span class="text small">FAQ</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav> 
+                                <!-- 메뉴 -->
+                                <!--- 유틸 -->
+                                <div class="head-util">
+                                    <a href="#" class="login-btn"><span class="sr-only">로그인</span></a>
+                                    <a href="#" class="siteMap-btn"><span class="sr-only">전체메뉴</span></a>
+                                </div>
+                                <!--- //유틸 -->
+
+                                <!-- 사이트맵-->
+                                <div class="siteMap-menu pc">
+                                    <div class="siteMap-in ">
+                                        <div class="inner">
+                                            <ul class="gnb">
+                                                <li class="depth-1">
+                                                    <a href="#" class="link"><span class="text">소개 및 이용방법<i class="more"></i></span></a>
+                                                    <div class="depth-2">
+                                                        <div class="depth-2-wrap">
+                                                            <ul class="depth-2-ul">
+                                                                <li><a href="#" class="link"><span class="text small">서비스소개</span></a></li>
+                                                                <li><a href="#" class="link"><span class="text small">통계정보활용약관</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="depth-1">
+                                                    <a href="#" class="link"><span class="text">활용신청<i class="more"><span></span></i></span></a>
+                                                    <div class="depth-2">
+                                                        <div class="depth-2-wrap">
+                                                            <ul class="depth-2-ul">
+                                                                <li><a href="#" class="link"><span class="text small">활용신청</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="depth-1">
+                                                    <a href="#" class="link"><span class="text">개발가이드<i class="more"></i></span></a>
+                                                    <div class="depth-2">
+                                                        <div class="depth-2-wrap">
+                                                            <ul class="depth-2-ul">
+                                                                <li><a href="#" class="link"><span class="text small">통계목록</span></a></li>
+                                                                <li><a href="#" class="link"><span class="text small">통계자료</span></a></li>
+                                                                <li><a href="#" class="link"><span class="text small">통계설명</span></a></li>
+                                                                <li><a href="#" class="link"><span class="text small">통계표설명</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="depth-1">
+                                                    <a href="#" class="link"><span class="text">커뮤니티<i class="more"></i></span></a>
+                                                    <div class="depth-2">
+                                                        <div class="depth-2-wrap">
+                                                            <ul class="depth-2-ul">
+                                                                <li><a href="#" class="link"><span class="text small">공지사항</span></a></li>
+                                                                <li><a href="#" class="link"><span class="text small">FAQ</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="pc-top">
+                                        <a href="#" class="close open"></a>
+                                    </div>
+                                </div>
+                                 <!-- //사이트맵-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- //헤더 영역 -->
+        
+        <!-- 메인 컨텐츠 -->
+        <div class="container">
+            <div class="mainVisual">
+                <div class="visual_center">
+                    <div class="visual_left">
+                        <p class="left_fontbox">
+                            <strong>해양수산농계정보</strong>를<br> 웹 또는 모바일앱 개발에 활용할 수 있도록<br><strong>인터페이스(API)를 제공하는 서비스</strong>입니다. 
+                        </p>
+                        <div class="button_area">
+                            <div class="button_List">
+                                <ul>
+                                    <li><a class="visual_button" href="#">OPEN API 인증키 신청</a></li>
+                                    <li><a class="visual_button" href="#">OPEN API 검색 및 이용방법</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="visual_right">
+                        <div class="right_fontbox">
+                            <p>2024.06.18 기준</p>
+                            <h3><em>해양수산통계</em> 개방현황</h3>
+                            <div class="visual_grid_area"> 
+                                <div class="progress_area">
+                                    <a href="#">
+                                        <div class="progress">
+                                            <div class="progress-bar1">
+                                                <progress value="25" max="100" style="visibility:hidden;height:0;width:0;"></progress>
+                                            </div>
+                                        </div>
+                                        <p>통계목록</p>
+                                        <p class="num_style"><strong class="fs30">16</strong>건</p>
+                                    </a>
+                                </div>
+                                <div class="progress_area"> 
+                                    <a href="#">
+                                        <div class="progress">
+                                            <div class="progress-bar2">
+                                                <progress value="15" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+                                            </div>
+                                        </div>
+                                        <p>통계자료(통계표)</p>
+                                        <p class="num_style"><strong class="fs30">249,311</strong>건</p>
+                                    </a>
+                                </div>
+                                <div class="progress_area"> 
+                                    <a href="#">
+                                        <div class="progress">
+                                            <div class="progress-bar3">
+                                                <progress value="75" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+                                            </div>
+                                        </div>
+                                        <p>통계설명자료(조사)</p>
+                                        <p class="num_style"><strong class="fs30">245</strong>건</p>
+                                    </a>
+                                </div>
+                                <div class="progress_area"> 
+                                    <a href="#">
+                                        <div class="progress">
+                                            <div class="progress-bar4">
+                                                <progress value="45" max="100" style="visibility:hidden;height:0;width:0;">45%</progress>
+                                            </div>
+                                        </div>
+                                        <p>통계주요지표</p>
+                                        <p class="num_style"><strong class="fs30">12,5224</strong>건</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_cnt">
+                <!-- 공지사항 -->
+                <div class="noti_area">
+                    <div class="noti_title">
+                        <h2>공지사항</h2>
+                        <div class="plus">
+                            <a href="#">
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                            </a>  
+                        </div>
+                    </div>
+                        <ul class="noti">
+                            <li><a href="#"><span class="noti_tag">긴급</span><strong>화물수송 통계표 변경 안내화물수송 통계표 변경 안내화물수송 통계표 변경 안내화물수송 통계표 변경 안내</strong><span class="date">2024-01-22</span></a></li>
+                            <li><a href="#"><span class="noti_tag">일반</span><strong>화물수송 통계표 변경 안내</strong><span class="date">2024-01-22</span></a></li>
+                            <li><a href="#"><span class="noti_tag">일반</span><strong>화물수송 통계표 변경 안내</strong><span class="date">2024-01-22</span></a></li>
+                            <li><a href="#"><span class="noti_tag">일반</span><strong>화물수송 통계표 변경 안내</strong><span class="date">2024-01-22</span></a></li>
+                        </ul>
+                </div>
+                <!-- //공지사항 -->
+                
+                <!-- FAQ -->
+                <div class="faq_area">
+                    <div class="noti_title">
+                        <h2>FAQ</h2>
+                        <div class="plus">
+                            <a href="#">
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                            </a>  
+                        </div>
+                    </div>
+                    <ul class="faq">
+                        <li><a href="#" class="faq_button_style"><strong>SDMX란 무엇인가요?</strong><span class="arrow"></span></a></li>
+                        <li><a href="#" class="faq_button_style"><strong>회원가입은 어떻게 하나요?</strong><span class="arrow"></span></a></li>
+                    </ul>
+                </div>
+                <!-- //FAQ -->
+            </div>
+        </div>
+        <!-- //메인 컨텐츠 -->
+
+         <!-- 푸터 -->
+         <footer id="footer">
+            <div class="inner">
+                <div class="footer-in">
+                    <div class="f-logo">
+                        <img src="img/common/foot_logo.png" class="logo-im" alt="해양수산부">
+                    </div>
+                    <div class="f-cnt">
+                        <div class="f-info">
+                            <p class="info-addr">(우)30110 세종특별자치시 다솜2로 94(어진동) 정부세종청사 5동</p>
+                            <p class="info-cs">시스템문의 <strong class="strong">044-200-5497</strong>(월~금 9:00~18:00, 공휴일 제외)</p>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <select>
+                            <option>관련사이트</option>
+                        </select>
+                    </div>
+                    <div class="f-btm">
+                        <div class="f-btm-text">
+                            <div class="f-menu">
+                                <a href="#">이용안내</a>
+                                <a href="#" class="point">개인정보처리방침</a>
+                                <a href="#">이메일무단수집거부</a>
+                                <a href="#">담당자 연락처</a>
+                            </div>
+                            <p class="f-copy">Copyright (C) Ministry of Oceans and Fisheries. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //푸터-->
+    </div> 
+</body>
+</html>
