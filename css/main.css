@@ -16,6 +16,7 @@ ol,ul{list-style:none;}
 .mode_change .mode i {color: #fff; font-size: 20px; transition: all 0.5s; padding: 10px;opacity: 0;}
 .mode_change div{display: flex; justify-content: center; align-items: center;}
 .mode_change .mode i.active {opacity: 1;}
+
 /* visual */
 .visual_area {width: 100%; background: #000 url(../img/main/visual_img.png) no-repeat right bottom; height: 500px; background-size: 500px;}
 .visual_area .inner{padding:0 20px;}
@@ -23,6 +24,14 @@ ol,ul{list-style:none;}
 .visual_area .txt_area .main_txt{font-size: 24px; font-weight: 400;}
 .visual_area .txt_area h1{font-size: 30px; font-weight: bold;}
 .visual_area .txt_area .sub_txt {font-size: 18px;}
+
+/* mainCon1 */
+.mainCon_1{width: 100%;display: block;}
+.mainCon_1 .grid_wrap{padding: 0 10px; }
+.mainCon_1 .grid_area {display: flex; justify-content: space-between; align-items: center;}
+.mainCon_1 .grid_area .grid_item {border: 1px solid #d5d5d5; padding: 30px;}
+.mainCon_1 .grid_area .grid_item .top_tag {display: flex; justify-content: space-between;}
+
 
 /* prefers-color-scheme - 사용자가 사용하고 있는 테마를 바탕으로 인식해서 자동으로 바꿈 */
 @media (prefers-color-scheme: dark) {
