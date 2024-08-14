@@ -32,7 +32,8 @@ ol,ul{list-style:none;}
 .mainCon_1 .grid_area {display: flex; justify-content: space-between; align-items: center; padding: 30px 0;}
 .mainCon_1 .grid_area .grid_item {border: 1px solid #d5d5d5; padding: 30px; border-radius: 15px; width: calc((60% - 20px) / 4);}
 .mainCon_1 .grid_area .grid_item .top_tag {display: flex; justify-content: space-between;}
-
+.mainCon_1 .grid_area.left{justify-content: flex-start;}
+.mainCon_1 .grid_area.right {justify-content: space-between;}
 
 /* prefers-color-scheme - 사용자가 사용하고 있는 테마를 바탕으로 인식해서 자동으로 바꿈 */
 @media (prefers-color-scheme: dark) {
