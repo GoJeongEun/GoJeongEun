@@ -7,4 +7,5 @@ $(document).ready(function(){
             $(this).children("i").addClass('active');
        }
     });
+    
 });
