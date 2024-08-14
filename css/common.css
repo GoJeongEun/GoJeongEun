@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+@import url('../fonts/noto_sans_kr/notosans_kr.css');
+
+/*reset*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary,button{
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	vertical-align:top;
+	background:transparent;
+	font-style: normal;
+}
+html, body {width:100%; height:100%; font-family: 'Noto Sans KR';}
+table, td{vertical-align: middle;}
+p{font-size: 16px; text-align: center;}
+time{color: #ededed; font-size: 14px;}
+
+
+
+/* text-align */
+.tc{text-align: center;}
+
+/* font-size */
+.fs10{font-size: 10px;}
+.fs12{font-size: 12px;}
+.fs14{font-size: 14px;}
+.fs16{font-size: 16px;}
+
+/* font-family */
+.en{font-family: "Saira", sans-serif;}
+
+
+/* color */
+.primary{color: #0d6efd;}
+.success{color: #198754;}
+.warning{color: #ffc107;}
+.danger{color: #dc3545;}
+
+/* guide content css */
+.inner {padding: 10px;}
+.h1{font-size: 30px; text-align: center;font-weight: bold;}
+.txt_area{display: flex; justify-content: space-between;}
