@@ -53,13 +53,16 @@ ol,ul{list-style:none;}
 .mainCon_2 .grid_card_area .grid_card .card_item .top_mid .btn_area .share-icon::before{content: "\F0FE";font-family: 'remixicon'; font-style: normal; font-size: 24px; color: #fff; margin-right: 3px;}
 .mainCon_2 .grid_card_area .txt_area {padding: 20px 0; text-align: left;}
 .mainCon_2 .grid_card_area .txt_area h2{padding: 10px 0;}
-.mainCon_2 .grid_card_area .txt_area h2::after{content: "\EA6E"; font-family: 'remixicon'; font-style: normal; font-size: 24px; color: #fff; margin-right: 3px;}
+.mainCon_2 .grid_card_area .txt_area h2::after{content: "\EA6E"; font-family: 'remixicon'; font-style: normal; font-size: 26px; color: #fff; margin-right: 3px;}
 .mainCon_2 .grid_card_area .txt_area p {text-align: left; padding: 10px 0;}
 .mainCon_2 .grid_card_area .txt_area .date{padding: 20px 0;}
 .mainCon_2 .btn_area_right{display: flex; justify-content: flex-end; flex-direction: row !important; padding: 10px 0; border-bottom: 1px solid #fff;}
 .mainCon_2 .btn_area_right button{background: #246beb; color: #fff; padding: 10px 5px;}
 .mainCon_2 .grid_card_area .grid_card .card_item .bottom_area {padding-top: 20px;}
-.mainCon_2 .grid_card_area .grid_card .card_item .bottom_area .tag_span{border: 1px solid #fff; padding: 2px 5px; border-radius: 5px;}
+.mainCon_2 .grid_card_area .grid_card .card_item .bottom_area .tag_span{border: 1px solid #fff; padding: 2px 5px; border-radius: 5px; gap: 10px;}
+
+/* footer */
+.footer{padding: 50px 0; border-top: 1px solid #f1f1f1;}
 
 /* prefers-color-scheme - 사용자가 사용하고 있는 테마를 바탕으로 인식해서 자동으로 바꿈 */
 @media (prefers-color-scheme: dark) {
