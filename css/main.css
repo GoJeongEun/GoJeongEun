@@ -43,13 +43,16 @@ ol,ul{list-style:none;}
 .mainCon_2 .grid_card_area .grid_card li:last-child {margin-right: 0;}
 .mainCon_2 .grid_card_area .grid_card .card_item div{flex-direction: column;}
 .mainCon_2 .grid_card_area .grid_card .card_item .top_mid{display: flex; justify-content: space-between; flex-direction: row; padding: 10px 0;}
-.mainCon_2 .grid_card_area .grid_card .card_item .top_mid .tag{background: #eff5ff; color: #1d56bc; padding:2px 5px; border-radius: 3px;}
+.mainCon_2 .grid_card_area .grid_card .card_item .top_mid .tag.primary{background: #eff5ff; color: #1d56bc; padding:2px 5px; border-radius: 3px;}
+.mainCon_2 .grid_card_area .grid_card .card_item .top_mid .tag.success{background: #E3f3e6; color: #008a1e;}
 .mainCon_2 .grid_card_area .grid_card .card_item .top_mid .btn_area {display: flex; justify-content: flex-end; flex-direction: row;}
 .mainCon_2 .grid_card_area .grid_card .card_item .top_mid .btn_area button{color: #fff; padding-right: 3px;}
+/* remixIcon */
 .mainCon_2 .grid_card_area .grid_card .card_item .top_mid .btn_area .heart-icon::before{content: "\EE0F";font-family: 'remixicon'; font-style: normal; font-size: 24px; color: #fff; margin-right: 3px;}
 .mainCon_2 .grid_card_area .grid_card .card_item .top_mid .btn_area .share-icon::before{content: "\F0FE";font-family: 'remixicon'; font-style: normal; font-size: 24px; color: #fff; margin-right: 3px;}
 .mainCon_2 .grid_card_area .txt_area {padding: 20px 0; text-align: left;}
 .mainCon_2 .grid_card_area .txt_area h2{padding: 10px 0;}
+.mainCon_2 .grid_card_area .txt_area h2::after{content: "\EA6E"; font-family: 'remixicon'; font-style: normal; font-size: 24px; color: #fff; margin-right: 3px;}
 .mainCon_2 .grid_card_area .txt_area p {text-align: left; padding: 10px 0;}
 .mainCon_2 .grid_card_area .txt_area .date{padding: 20px 0;}
 .mainCon_2 .btn_area_right{display: flex; justify-content: flex-end; flex-direction: row !important; padding: 10px 0; border-bottom: 1px solid #fff;}
