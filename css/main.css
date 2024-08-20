@@ -27,13 +27,35 @@ ol,ul{list-style:none;}
 .visual_area .txt_area h1{font-size: 24px; font-weight: 400; margin-top: 40px;}
 
 /* mainCon1 */
-.mainCon_1{width: 100%;display: flex; height: 600px; padding: 50px 0; justify-content: flex-end;}
+.mainCon_1{width: 100%;display: flex; height: 500px; padding: 50px 0; justify-content: flex-end;}
 .mainCon_1 .grid_wrap{padding: 0 20px; display: flex; justify-content: space-between;}
 .mainCon_1 .grid_area {display: flex; justify-content: space-between; align-items: center; padding: 30px 0;}
 .mainCon_1 .grid_area .grid_item {border: 1px solid #d5d5d5; padding: 30px; border-radius: 15px; width: calc((60% - 20px) / 4);}
 .mainCon_1 .grid_area .grid_item .top_tag {display: flex; justify-content: space-between;}
 .mainCon_1 .grid_area.left{justify-content: flex-start;}
 .mainCon_1 .grid_area.right {justify-content: space-between;}
+
+/* mainCon2 */
+.mainCon_2 {width: 100%; padding: 50px 0;}
+.mainCon_2 .grid_card_area{padding: 0 10px;}
+.mainCon_2 .grid_card_area .grid_card {display: flex; justify-content: space-between;}
+.mainCon_2 .grid_card_area .grid_card .card_item {width: calc((100% - 20px) / 3); padding:30px 20px; border: 1px solid #d5d5d5; margin-right: 20px; min-height: 300px;}
+.mainCon_2 .grid_card_area .grid_card li:last-child {margin-right: 0;}
+.mainCon_2 .grid_card_area .grid_card .card_item div{flex-direction: column;}
+.mainCon_2 .grid_card_area .grid_card .card_item .top_mid{display: flex; justify-content: space-between; flex-direction: row; padding: 10px 0;}
+.mainCon_2 .grid_card_area .grid_card .card_item .top_mid .tag{background: #eff5ff; color: #1d56bc; padding:2px 5px; border-radius: 3px;}
+.mainCon_2 .grid_card_area .grid_card .card_item .top_mid .btn_area {display: flex; justify-content: flex-end; flex-direction: row;}
+.mainCon_2 .grid_card_area .grid_card .card_item .top_mid .btn_area button{color: #fff; padding-right: 3px;}
+.mainCon_2 .grid_card_area .grid_card .card_item .top_mid .btn_area .heart-icon::before{content: "\EE0F";font-family: 'remixicon'; font-style: normal; font-size: 24px; color: #fff; margin-right: 3px;}
+.mainCon_2 .grid_card_area .grid_card .card_item .top_mid .btn_area .share-icon::before{content: "\F0FE";font-family: 'remixicon'; font-style: normal; font-size: 24px; color: #fff; margin-right: 3px;}
+.mainCon_2 .grid_card_area .txt_area {padding: 20px 0; text-align: left;}
+.mainCon_2 .grid_card_area .txt_area h2{padding: 10px 0;}
+.mainCon_2 .grid_card_area .txt_area p {text-align: left; padding: 10px 0;}
+.mainCon_2 .grid_card_area .txt_area .date{padding: 20px 0;}
+.mainCon_2 .btn_area_right{display: flex; justify-content: flex-end; flex-direction: row !important; padding: 10px 0; border-bottom: 1px solid #fff;}
+.mainCon_2 .btn_area_right button{background: #246beb; color: #fff; padding: 10px 5px;}
+.mainCon_2 .grid_card_area .grid_card .card_item .bottom_area {padding-top: 20px;}
+.mainCon_2 .grid_card_area .grid_card .card_item .bottom_area .tag_span{border: 1px solid #fff; padding: 2px 5px; border-radius: 5px;}
 
 /* prefers-color-scheme - 사용자가 사용하고 있는 테마를 바탕으로 인식해서 자동으로 바꿈 */
 @media (prefers-color-scheme: dark) {
