@@ -1,4 +1,8 @@
 $(document).ready(function(){
+     
+     // animate 시작
+     AOS.init(); 
+
     //테마 모드 전환
     $(".mode_toggle > a").on("click", function(){
        if($(this).children("i").hasClass('active') == true){
@@ -9,3 +13,5 @@ $(document).ready(function(){
     });
     
 });
+
+
