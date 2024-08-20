@@ -43,7 +43,8 @@ ol,ul{list-style:none;}
 .mainCon_2 .grid_card_area .grid_card li:last-child {margin-right: 0;}
 .mainCon_2 .grid_card_area .grid_card .card_item div{flex-direction: column;}
 .mainCon_2 .grid_card_area .grid_card .card_item .top_mid{display: flex; justify-content: space-between; flex-direction: row; padding: 10px 0;}
-.mainCon_2 .grid_card_area .grid_card .card_item .top_mid .tag.primary{background: #eff5ff; color: #1d56bc; padding:2px 5px; border-radius: 3px;}
+.mainCon_2 .grid_card_area .grid_card .card_item .top_mid .tag{background: #eff5ff; color: #1d56bc; padding:2px 5px; border-radius: 3px;}
+.mainCon_2 .grid_card_area .grid_card .card_item .top_mid .tag.primary{background: #eff5ff; color: #1d56bc;}
 .mainCon_2 .grid_card_area .grid_card .card_item .top_mid .tag.success{background: #E3f3e6; color: #008a1e;}
 .mainCon_2 .grid_card_area .grid_card .card_item .top_mid .btn_area {display: flex; justify-content: flex-end; flex-direction: row;}
 .mainCon_2 .grid_card_area .grid_card .card_item .top_mid .btn_area button{color: #fff; padding-right: 3px;}
