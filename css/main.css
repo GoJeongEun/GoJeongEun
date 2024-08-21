@@ -57,20 +57,23 @@ ol,ul{list-style:none;}
 .mainCon_2 .grid_card_area .txt_area p {text-align: left;}
 .mainCon_2 .grid_card_area .txt_area .date{padding: 20px 0;}
 .mainCon_2 .btn_area_right{display: flex; justify-content: flex-end; flex-direction: row !important; padding: 10px 0; border-bottom: 1px solid #fff;}
-.mainCon_2 .btn_area_right button{background: #246beb; color: #fff; padding: 10px 5px;}
+.mainCon_2 .btn_area_right button{border: 1px solid #246beb; color: #246beb; padding: 10px 5px; transition: all 0.5s; background: #fff; min-width: 80px;}
+.mainCon_2 .btn_area_right button:hover{background: #246beb; color: #fff;}
 .mainCon_2 .grid_card_area .grid_card .card_item .bottom_area {padding-top: 20px;}
 .mainCon_2 .grid_card_area .grid_card .card_item .bottom_area .tag_span{border: 1px solid #fff; padding: 2px 5px; border-radius: 5px; gap: 10px;}
 
 /* mainCon3 - KRDS 메인1-1 */
 .mainCon_3  {width: 100%; padding: 50px 0;}
-.mainCon_3 .Con3_grid{padding: 10px; display: flex; justify-content: center; align-items: center;}
+.mainCon_3 .Con3_grid{padding: 10px;}
+.mainCon_3 .Con3_grid > div{display: flex;}
 .mainCon_3 .Con3_item > div {display: flex;}
 .mainCon_3 .Con3_grid .Con3_tit{font-size: 22px;}
 .mainCon_3 .Con3_grid .Con3_tit > strong{font-size: 24px;}
 .mainCon_3 .Con3_grid .div{justify-content: flex-start;}
-.mainCon_3 .Con3_left{background: #1D6CEB;}
+.mainCon_3 .Con3_left{background: #1D6CEB; width: calc(50% - 250px);}
 .mainCon_3 .Con3_left .Con3_txtBox{flex-direction: column;}
 .mainCon_3 .Con3_left .Con3_txtBox p {color: #fff;}
+.mainCon_3 .Con3_right {background: #BBD3F9; width: calc(50% - 20px);}
 /* footer */
 .footer{padding: 50px 0; border-top: 1px solid #f1f1f1;}
 
