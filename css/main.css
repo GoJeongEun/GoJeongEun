@@ -39,7 +39,7 @@ ol,ul{list-style:none;}
 .mainCon_2 {width: 100%; padding: 50px 0;}
 .mainCon_2 .grid_card_area{padding: 0 10px;}
 .mainCon_2 .grid_card_area .grid_card {display: flex; justify-content: space-between;}
-.mainCon_2 .grid_card_area .grid_card .card_item {width: calc((100% - 20px) / 3); padding:30px 20px; border: 1px solid #d5d5d5; margin-right: 20px; min-height: 300px;}
+.mainCon_2 .grid_card_area .grid_card .card_item {width: calc((100% - 20px) / 3); padding:30px 20px; border: 1px solid #d5d5d5; margin-right: 20px; min-height: 300px; border-radius: 5px;}
 .mainCon_2 .grid_card_area .grid_card li:last-child {margin-right: 0;}
 .mainCon_2 .grid_card_area .grid_card .card_item div{flex-direction: column;}
 .mainCon_2 .grid_card_area .grid_card .card_item .top_mid{display: flex; justify-content: space-between; flex-direction: row; padding: 10px 0;}
@@ -51,16 +51,26 @@ ol,ul{list-style:none;}
 /* remixIcon */
 .mainCon_2 .grid_card_area .grid_card .card_item .top_mid .btn_area .heart-icon::before{content: "\EE0F";font-family: 'remixicon'; font-style: normal; font-size: 24px; color: #fff; margin-right: 3px;}
 .mainCon_2 .grid_card_area .grid_card .card_item .top_mid .btn_area .share-icon::before{content: "\F0FE";font-family: 'remixicon'; font-style: normal; font-size: 24px; color: #fff; margin-right: 3px;}
-.mainCon_2 .grid_card_area .txt_area {padding: 20px 0; text-align: left;}
-.mainCon_2 .grid_card_area .txt_area h2{padding: 10px 0;}
+.mainCon_2 .grid_card_area .txt_area {text-align: left; gap: 20px;}
+.mainCon_2 .grid_card_area .txt_area h2{font-size: 22px;}
 .mainCon_2 .grid_card_area .txt_area h2::after{content: "\EA6E"; font-family: 'remixicon'; font-style: normal; font-size: 26px; color: #fff; margin-right: 3px;}
-.mainCon_2 .grid_card_area .txt_area p {text-align: left; padding: 10px 0;}
+.mainCon_2 .grid_card_area .txt_area p {text-align: left;}
 .mainCon_2 .grid_card_area .txt_area .date{padding: 20px 0;}
 .mainCon_2 .btn_area_right{display: flex; justify-content: flex-end; flex-direction: row !important; padding: 10px 0; border-bottom: 1px solid #fff;}
 .mainCon_2 .btn_area_right button{background: #246beb; color: #fff; padding: 10px 5px;}
 .mainCon_2 .grid_card_area .grid_card .card_item .bottom_area {padding-top: 20px;}
 .mainCon_2 .grid_card_area .grid_card .card_item .bottom_area .tag_span{border: 1px solid #fff; padding: 2px 5px; border-radius: 5px; gap: 10px;}
 
+/* mainCon3 - KRDS 메인1-1 */
+.mainCon_3  {width: 100%; padding: 50px 0;}
+.mainCon_3 .Con3_grid{padding: 10px; display: flex; justify-content: center; align-items: center;}
+.mainCon_3 .Con3_item > div {display: flex;}
+.mainCon_3 .Con3_grid .Con3_tit{font-size: 22px;}
+.mainCon_3 .Con3_grid .Con3_tit > strong{font-size: 24px;}
+.mainCon_3 .Con3_grid .div{justify-content: flex-start;}
+.mainCon_3 .Con3_left{background: #1D6CEB;}
+.mainCon_3 .Con3_left .Con3_txtBox{flex-direction: column;}
+.mainCon_3 .Con3_left .Con3_txtBox p {color: #fff;}
 /* footer */
 .footer{padding: 50px 0; border-top: 1px solid #f1f1f1;}
 

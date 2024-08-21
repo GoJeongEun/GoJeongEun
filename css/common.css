@@ -39,6 +39,10 @@ time{color: #ededed; font-size: 14px;}
 .warning{color: #ffc107;}
 .danger{color: #dc3545;}
 
+
+/* bg-color */
+.navyBG{color: #223b5b;}
+
 /* guide content css */
 .inner {padding: 10px;}
 .h1{font-size: 30px; text-align: center;font-weight: bold;}
