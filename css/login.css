@@ -14,9 +14,12 @@
 /* login form */
 .login_wrap .login-form-area {display: flex; padding: 10px 15px; border-top: 1px solid #e4e4e4; border-bottom: 1px solid #e4e4e4;}
 .login_wrap .login-form-area .login_left {width: calc((100% - 150px) / 2);}
+.login_wrap .form_tit {font-size: 15px;}
+
 .login_wrap .login-form-area .login_left .fieldset {width: 100%;}
 .login_wrap .login-form-area .form_group .form_conts {display: flex;flex-direction: column; width: 100%; }
-.login_wrap .login-form-area .form_group .form_conts > input {width: 100%; padding: 10px 0; color: #555;}
+.login_wrap .login-form-area .form_group .form_conts > input {width: 100%; padding: 10px 0; color: #555; font-size: 17px;}
+.login_wrap .login-form-area .form_group .form_conts > input #login_pw::after {content: "\ECB7"; font-family: 'remixicon'; font-style: normal; font-size: 26px; color: #fff; margin-right: 3px;}
 .login_wrap .login-form-area .login_left .btnPrimary{width: 100%; padding: 10px; border-radius: 5px;}
 .login_wrap .login-form-area .login_left .login_list{display: flex; gap: 5px; justify-content: center; align-items: center;}
 .login_wrap .login-form-area .login_left .login_list li + li::before{position: absolute; top: 50%; left: 0; content: ""; width: 1px; height: 16px; background-color: #e4e4e4; transform: translateY(-50%);}

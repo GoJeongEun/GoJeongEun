@@ -40,7 +40,14 @@ ul, ol {list-style: none;}
 .navy{color: #223b5b;}
 
 /* bg-color */
-.navyBG{color: #223b5b;}
+.navyBG{background-color: #223b5b;}
+.successBG{background-color: #eef7f0;}
+.primaryBG{background-color: #eff5ff;}
+
+
+/* border-color */
+.successBd{border: 1px solid #cee9d4;}
+.primaryBd{border: 1px solid #d3e1fb;}
 
 /* guide content css */
 .inner {padding: 10px;}
