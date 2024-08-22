@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해양수산통계공유서비스</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/api/layout.js"></script>
+    <script src="js/api/sub.js"></script>
+    <link href="css/api/sub.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+   <div class="wrap" id="wrap">
+            <!-- 상단 배너영역  -->
+            <div id="header-top">
+                <div class="toggle-wrap">
+                    <div class="toggle-head">
+                        <div class="inner">
+                            <span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+                            <button type="button" class="btn btn-txt ico-arr-down toggle-btn xsm">공식 누리집 확인방법<span
+                                    class="sr-only">열기</span></button>
+                        </div>
+                    </div>
+                    <div class="toggle-body">
+                        <div class="inner">
+                            <dl class="dl nuri">
+                                <dt class="dt">공식 누리집 주소 확인하기</dt>
+                                <dd class="dd">go.kr 주소를 사용하는 누리집은 대한민국 정부기관이 관리하는 누리집입니다.<br class="br">이밖에 or.kr 또는 .kr등 다른 도메인 주소를
+                                    사용하고
+                                    있다면 아래 URL에서
+                                    도메인 주소를 확인해
+                                    보세요</dd>
+                                <dd><a href="/search.do" class="btn btn-txt ico-go xsm" target="_blank">운영중인 공식 누리집보기</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //상단 배너영역  -->
+
+            <!-- 헤더 영역 -->
+        <header id="header">
+            <div class="header-in">
+                <div class="header-body">
+                    <div class="inner">
+                        <div class="hade-in">
+                            <h1 class="logo">
+                                <a href="main.html">
+                                    <img src="img/api/sub/sub_logo.png" alt="해양수산통계">
+                                </a>
+                            </h1>
+                            <!-- 메뉴 -->
+                            <nav class="head-gnb">
+                                <div class="inner">
+                                    <ul class="gnb">
+                                        <li class="depth-1">
+                                            <a href="#" class="link"><span class="text">소개 및 이용방법</span></a>
+                                            <div class="depth-2">
+                                                <div class="depth-2-wrap">
+                                                    <ul class="depth-2-ul">
+                                                        <li><a href="#" class="link"><span class="text small">서비스소개</span></a></li>
+                                                        <li><a href="#" class="link"><span class="text small">통계정보활용약관</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="depth-1">
+                                            <a href="#" class="link"><span class="text">활용신청</span></a>
+                                            <div class="depth-2">
+                                                <div class="depth-2-wrap">
+                                                    <ul class="depth-2-ul">
+                                                        <li><a href="#" class="link"><span class="text small">활용신청</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="depth-1">
+                                            <a href="#" class="link"><span class="text">개발가이드</span></a>
+                                            <div class="depth-2">
+                                                <div class="depth-2-wrap">
+                                                    <ul class="depth-2-ul">
+                                                        <li><a href="#" class="link"><span class="text small">통계목록</span></a></li>
+                                                        <li><a href="#" class="link"><span class="text small">통계자료</span></a></li>
+                                                        <li><a href="#" class="link"><span class="text small">통계설명</span></a></li>
+                                                        <li><a href="#" class="link"><span class="text small">통계표설명</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="depth-1">
+                                            <a href="#" class="link"><span class="text">커뮤니티</span></a>
+                                            <div class="depth-2">
+                                                <div class="depth-2-wrap">
+                                                    <ul class="depth-2-ul">
+                                                        <li><a href="#" class="link"><span class="text small">공지사항</span></a></li>
+                                                        <li><a href="#" class="link"><span class="text small">FAQ</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav> 
+                            <!-- 메뉴 -->
+                            <!--- 유틸 -->
+                            <div class="head-util">
+                                <a href="#" class="login-btn"><span class="sr-only">로그인</span></a>
+                                <a href="#" class="siteMap-btn"><span class="sr-only">전체메뉴</span></a>
+                            </div>
+                            <!--- //유틸 -->
+
+                            <!-- 사이트맵-->
+                            <div class="siteMap-menu">
+                                <div class="siteMap-in ">
+                                    <div class="inner">
+                                        <ul class="gnb">
+                                            <li class="mo-top">
+                                                <a href="#" class="close open"></a>
+                                            </li>
+                                            <li class="depth-1">
+                                                <a href="#" class="link"><span class="text">소개 및 이용방법</span></a>
+                                                <div class="depth-2">
+                                                    <div class="depth-2-wrap">
+                                                        <ul class="depth-2-ul">
+                                                            <li><a href="#" class="link"><span class="text small">서비스소개</span></a></li>
+                                                            <li><a href="#" class="link"><span class="text small">통계정보활용약관</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="depth-1">
+                                                <a href="#" class="link"><span class="text">활용신청</span></a>
+                                                <div class="depth-2">
+                                                    <div class="depth-2-wrap">
+                                                        <ul class="depth-2-ul">
+                                                            <li><a href="#" class="link"><span class="text small">활용신청</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="depth-1">
+                                                <a href="#" class="link"><span class="text">개발가이드</span></a>
+                                                <div class="depth-2">
+                                                    <div class="depth-2-wrap">
+                                                        <ul class="depth-2-ul">
+                                                            <li><a href="#" class="link"><span class="text small">통계목록</span></a></li>
+                                                            <li><a href="#" class="link"><span class="text small">통계자료</span></a></li>
+                                                            <li><a href="#" class="link"><span class="text small">통계설명</span></a></li>
+                                                            <li><a href="#" class="link"><span class="text small">통계표설명</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="depth-1">
+                                                <a href="#" class="link"><span class="text">커뮤니티</span></a>
+                                                <div class="depth-2">
+                                                    <div class="depth-2-wrap">
+                                                        <ul class="depth-2-ul">
+                                                            <li><a href="#" class="link"><span class="text small">공지사항</span></a></li>
+                                                            <li><a href="#" class="link"><span class="text small">FAQ</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="mo_menu_bottom">
+                                            <a href="#"><span>로그인</span></a>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="pc-top">
+                                    <a href="#" class="close open"></a>
+                                </div>
+                                <div class="mo_background"></div> 
+                            </div>
+                             <!-- //사이트맵-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 헤더 영역 -->
+        
+        <!-- 메인 컨텐츠 -->
+        <div class="container">
+            <!-- 서브 메뉴 위치 -->
+            <div class="location">
+                <div class="inner">
+                    <div class="location_area">
+                        <div class="location_List">
+                            <ul class="sub_dep1">
+                                <li class="home">
+                                    <a href="#" class="sr-only">홈으로 이동</a>
+                                    <span></span>
+                                </li>
+                                <li class="sub_dep1List">
+                                    <a href="#" class="sub_dep1Link">
+                                       개발가이드
+                                    </a>
+                                    <ul class="sub_dep2List">
+                                        <li>
+                                            <a href="#">소개 및 이용방법</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">활용신청</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">개발 가이드</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">커뮤니티</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">이용현황</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub_dep1List">
+                                    <a href="#" class="sub_dep1Link">
+                                         통계목록
+                                    </a>
+                                    <ul class="sub_dep2List">
+                                        <li>
+                                            <a href="#">통계자료</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">활용신청</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">개발 가이드</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">커뮤니티</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">이용현황</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// 서브 메뉴 위치 -->
+            <div class="sub_layout">
+                <div class="inner">
+                    <div class="sub_title_area">
+                        <div class="sub_title">
+                            <h1 class="fontSC6">통계자료</h1>
+                            <p>통계목록 API를 이용하기 위한 요청변수, 출력정보, 샘플데이터를 제공하며, <strong>통계표선택(URL생성) 방법 </strong>(분류와 항목정보가 파라메터로 URL에 포함되어 파라메터를 변경해가며 이용 가능)과<br><strong>자료등록(자료등록 URL 생성) 방법</strong> (자료등록 후 이용하여야 하며 URL 변경 불가) 2가지 방법으로 활용 가능합니다. 출력포맷으로 JSON과 SDMX를 제공합니다.</p>
+                        </div>                 
+                    </div>
+                    <div id="content">
+                        <!-- 상단 탭 -->
+                        <div class="top_tab_btn_wrap dep3List">
+                            <!-- 2레벨 있을 시, 클래스 depth2 추가 / 3레벨 있을 시, 클래스 depth3 추가됩니다 -->
+                            <div class="top_btn_tab_area">
+                                <ul class="top_btn_tabList">
+                                    <li class="top_btn_tabItem">
+                                        <button type="button" class="active">상세기능</button>
+                                        <div class="top_btn_dep2">
+                                            <ul class="btn_tab_dep2List">
+                                                <li class="btn_tab_dep2Item">
+                                                    <button type="button" class="dep2Item_btn">JSON</button>
+                                                    <div class="btn_tab_dep3">
+                                                        <ul class="btn_tab_dep3List">
+                                                            <li class="btn_tab_dep3Item active">
+                                                                <button type="button">통계표 명칭</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">기관 명칭</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">수록정보</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">분류/항목</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">주석</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">단위</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">출처</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">가중치</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">자료갱신일</button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="btn_tab_dep2Item active">
+                                                    <button type="button" class="dep2Item_btn">SDMX</button>
+                                                    <div class="btn_tab_dep3">
+                                                        <ul class="btn_tab_dep3List">
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">DSD</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">Generic</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item active">
+                                                                <button type="button">StructureSpecific</button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="top_btn_tabItem">
+                                        <button type="button">
+                                            URL 생성
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="top_tab_right">
+                                <div class="right_button">
+                                    <div class="button_area">
+                                        <button type="button" class="btn_type01"><strong>개발가이드</strong> 다운받기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //상단 탭 -->
+                    <!-- 통계 테이블 목록  -->
+                        <div class="table_wrap">
+                            <h3 class="table_tit point_01">자료등록 방법</h3>
+                            <div class="table_area">
+                                <div class="table_con">
+                                    <ul class="">
+                                        <li>
+                                            <dl>
+                                                <dt>요청URL</dt>
+                                                <dd>
+                                                    <div class="tr_area">
+                                                        <span class="ff_pret">https://kosis.kr/openapi/statisticsData.do?method=getList</span>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl>
+                                                <dt>요청변수</dt>
+                                                <dd>
+                                                    <div class="tr_area">
+                                                        <div class="borderWrite_col_wrap">
+                                                            <table class="borderWrite_col border">
+                                                                <caption>요청URL로 요청변수, 변수타입, 설명, 비고를 제공합니다</caption>
+												<thead>
+													<tr>
+														<th scope="col" colspan="2">요청변수</th>
+														<th scope="col">변수타입</th>
+														<th scope="col">설명</th>
+														<th scope="col">비고</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td colspan="2" class="taL">apiKey</td>
+														<td>String</td>
+														<td class="taL">발급된 인증 key</td>
+														<td>필수</td>
+													</tr>
+													<tr>
+														<td colspan="2" class="taL">userStatsId</td>
+														<td>String</td>
+														<td class="taL">사용자 등록 통계표</td>
+														<td>필수</td>
+													</tr>
+													<tr>
+														<td class="taL" colspan="2">type</td>
+														<td>String</td>
+														<td class="taL">SDMX의 유형(Generic)</td>
+														<td>필수</td>
+													</tr>
+													<tr>
+														<td class="taL" colspan="2">prdSe</td>
+														<td>String</td>
+														<td class="taL">수록주기</td>
+														<td>
+															필수<button type="button" class="btn btn_small popup_type02">주기정보</button>
+														</td>
+													</tr>
+													<tr>
+														<td rowspan="2" class="taL">시점기준</td>
+														<td class="taL">startPrdDe</td>
+														<td>String</td>
+														<td class="taL">시작수록시점</td>
+														<td rowspan="4">
+															선택<button type="button" class="btn btn_small popup_type03">시점정보</button>
+															<br><br><p>(시점기준 또는 최신자료기준 택1) <br>※설정이 없을경우 최근시점1개 조회</p>
+														</td>
+													</tr>
+													<tr>
+														<td class="taL">endPrdDe</td>
+														<td>String</td>
+														<td class="taL">종료수록시점</td>
+													</tr>
+													<tr>
+														<td rowspan="2" class="taL">최신자료기준</td>
+														<td class="taL">newEstPrdCnt</td>
+														<td>String</td>
+														<td class="taL">최근수록시점 개수</td>
+													</tr>
+													<tr>
+														<td class="taL">prdInterval</td>
+														<td>String</td>
+														<td class="taL">수록시점 간격<br>ex) 2019, 2017, 2015 등 2개 시점 간격으로 추출시 [2] 입력</td>
+													</tr>
+													<tr>
+														<td colspan="2" class="taL">format</td>
+														<td>String</td>
+														<td class="taL">결과 유형(sdmx)</td>
+														<td>필수</td>
+													</tr>
+													<tr>
+														<td colspan="2" class="taL">version</td>
+														<td>String</td>
+														<td class="taL">결과값 구분</td>
+														<td>생략시 구버전으로 데이터 출력</td>
+													</tr>
+												</tbody>				
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3 class="table_tit point_01 m_t_40">통계표선택 방법</h3>
+                                <div class="table_con">
+                                    <ul class="">
+                                        <li>
+                                            <dl>
+                                                <dt>요청URL</dt>
+                                                <dd>
+                                                    <div class="tr_area">
+                                                        <span class="ff_pret">https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList</span>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl>
+                                                <dt>요청변수</dt>
+                                                <dd>
+                                                    <div class="tr_area">
+                                                        <div class="borderWrite_col_wrap">
+                                                            <table class="borderWrite_col border">
+                                                                <caption>요청URL로 요청변수, 변수타입, 설명, 비고를 제공합니다</caption>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col" colspan="2">요청변수</th>
+                                                                        <th scope="col">변수타입</th>
+                                                                        <th scope="col">설명</th>
+                                                                        <th scope="col">비고</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td colspan="2" class="taL">apiKey</td>
+                                                                        <td>String</td>
+                                                                        <td class="taL">발급된 인증 key</td>
+                                                                        <td>필수</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="2" class="taL">orgId</td>
+                                                                        <td>String</td>
+                                                                        <td class="taL">기관 ID</td>
+                                                                        <td>필수</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="2" class="taL">tblId</td>
+                                                                        <td>String</td>
+                                                                        <td class="taL">통계표 ID</td>
+                                                                        <td>필수</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="2" class="taL">objL1</td>
+                                                                        <td>String</td>
+                                                                        <td class="taL">분류1(첫번째 분류코드)</td>
+                                                                        <td>필수</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="2" class="taL">objL2 ~ objL8</td>
+                                                                        <td>String</td>
+                                                                        <td class="taL">분류2(두번째 분류코드) ~ 분류8(여덟째 분류코드)</td>
+                                                                        <td>선택</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="2" class="taL">itmId</td>
+                                                                        <td>String</td>
+                                                                        <td class="taL">항목</td>
+                                                                        <td>필수</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="2" class="taL">type</td>
+                                                                        <td>String</td>
+                                                                        <td class="taL">SDMX의 유형(Generic)</td>
+                                                                        <td>필수</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="2" class="taL">prdSe</td>
+                                                                        <td>String</td>
+                                                                        <td class="taL">수록주기</td>
+                                                                        <td>
+                                                                            필수<button type="button" class="btn btn_small popup_type02">주기정보</button>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td rowspan="2" class="taL">시점기준</td>
+                                                                        <td class="taL">startPrdDe</td>
+                                                                        <td>String</td>
+                                                                        <td class="taL">시작수록시점</td>
+                                                                        <td rowspan="4">
+                                                                            선택<button type="button" class="btn btn_small popup_type03">시점정보</button>
+                                                                            <br><br><p>(시점기준 또는 최신자료기준 택1) <br>※설정이 없을경우 최근시점1개 조회</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="taL">endPrdDe</td>
+                                                                        <td>String</td>
+                                                                        <td class="taL">종료수록시점</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td rowspan="2" class="taL">최신자료기준</td>
+                                                                        <td class="taL">newEstPrdCnt</td>
+                                                                        <td>String</td>
+                                                                        <td class="taL">최근수록시점 개수</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="taL">prdInterval</td>
+                                                                        <td>String</td>
+                                                                        <td class="taL">수록시점 간격<br>ex) 2019, 2017, 2015 등 2개 시점 간격으로 추출시 [2] 입력</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="2" class="taL">format</td>
+                                                                        <td>String</td>
+                                                                        <td class="taL">결과 유형(sdmx)</td>
+                                                                        <td>필수</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="2" class="taL">version</td>
+                                                                        <td>String</td>
+                                                                        <td class="taL">결과값 구분</td>
+                                                                        <td>생략시 구버전으로 데이터 출력</td>
+                                                                    </tr>
+                                                                </tbody>		
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                    <li>
+                                        <dl>
+                                            <dt>출력결과</dt>
+                                            <dd>
+                                                <div class="tr_area">
+                                                    <div class="tr_txtbox mt10">
+                                                        <span>출력변수</span>
+                                                    </div>
+                                                    <div class="borderWrite_col_wrap">
+                                                        <table class="borderWrite_col border">
+                                                            <caption>출력변수로 출력변수,내용,설명을 제공합니다</caption>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th colspan="4" scope="col">출력변수</th>
+                                                                    <th scope="col" colspan="1">비고</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="fst taL" rowspan="8">Header</td>
+                                                                    <td colspan="3" class="taL">ID</td>
+                                                                    <td class="taL">기관코드_통계표ID</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="3" class="taL">Prepared</td>
+                                                                    <td class="taL">전송시간</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td rowspan="4" class="taL">Sender</td>
+                                                                    <td colspan="2" class="taL">Id</td>
+                                                                    <td class="taL">전송기관</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2" class="taL">Name</td>
+                                                                    <td class="taL">전송기관명</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td rowspan="2" class="taL">Contact</td>
+                                                                    <td class="taL">Department</td>
+                                                                    <td class="taL">담당부서</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="taL">Telephone</td>
+                                                                    <td class="taL">담당부서 연락처</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="3" class="taL">Name</td>
+                                                                    <td class="taL">통계표명</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="3" class="taL">Source</td>
+                                                                    <td class="taL">출처</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="fst taL" rowspan="7">Series</td>
+                                                                    <td colspan="3" class="taL">C_분류</td>
+                                                                    <td class="taL">C_분류<br> (8개 분류까지 가능)</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="3" class="taL">ITEM</td>
+                                                                    <td class="taL">항목</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="3" class="taL">UNIT</td>
+                                                                    <td class="taL">단위</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="3" class="taL">FREQ</td>
+                                                                    <td class="taL">주기<button type="button" class="btn btn_small popup_type02">주기정보</button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td rowspan="3" class="taL">OBS</td>
+                                                                    <td colspan="2" class="taL">TIME_PERIOD</td>
+                                                                    <td class="taL">시점</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2" class="taL">OBS_VALUE</td>
+                                                                    <td class="taL">수치자료</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2" class="taL">LST_CHN_DE</td>
+                                                                    <td class="taL">최종수정일</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li class="guide_img_area">
+                                        <dl>
+                                            <dt>통계자료 예제<br>(JSP, R, Python)</dt>
+                                            <dd>
+                                                <div class="table_right_img_box">
+                                                    <div class="img_box">
+                                                        <img src="img/api/sub/sub_img.png" alt="통계자료 예제 이미지">
+                                                    </div>
+                                                    <div class="img_box_button">
+                                                        <button type="button" class="popup_btn">소스 보기</button>
+                                                    </div>
+                                                </div>
+                                                <div class="table_right_img_box">
+                                                    <div class="img_box">
+                                                        <img src="img/api/sub/sub_img.png" alt="통계자료 예제 이미지">
+                                                    </div>
+                                                    <div class="img_box_button">
+                                                        <button type="button" class="popup_btn">소스 보기</button>
+                                                    </div>
+                                                </div>
+                                                <div class="table_right_img_box">
+                                                    <div class="img_box">
+                                                        <img src="img/api/sub/sub_img.png" alt="통계자료 예제 이미지">
+                                                    </div>
+                                                    <div class="img_box_button">
+                                                        <button type="button" class="popup_btn">소스 보기</button>
+                                                    </div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>샘플데이터 확인</dt>
+                                            <dd>
+                                                <div class="tr_area">
+                                                    <div class="tr_txtbox mt10">
+                                                        <span>파라미터(Input)</span>
+                                                        <button type="button" class="btn_type02">데이터보기</button>
+                                                    </div>
+                                                    <div class="borderWrite_col_wrap">
+                                                        <table class="borderWrite_col">
+                                                            <caption>파라미터(Input)로 필드명,설명,조회조건을 제공합니다</caption>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">요청변수</th>
+                                                                    <th scope="col" colspan="2">설명</th>
+                                                                    <th scope="col">조회조건</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="taL">userStatsId</td>
+                                                                    <td colspan="2" class="taL">사용자 등록 통계표</td>
+                                                                    <td class="input_box">
+                                                                        <input type="text" maxlength="30" name="userStatsId" id="userStatsId" disabled="disabled" value="openapisample/101/DT_1IN1502/2/1/20191106094026_1" class="w100p">
+                                                                        <label for="userStatsId"></label>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="taL">prdSe</td>
+                                                                    <td colspan="2" class="taL">수록주기</td>
+                                                                    <td class="input_box">
+                                                                        <input type="text" maxlength="30" name="prdSe" id="prdSe" disabled="disabled" value="Y" class="w100p">
+                                                                        <label for="prdSe"></label>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="taL">startPrdDe</td>
+                                                                    <td rowspan="2" class="taL">시점기준</td>
+                                                                    <td class="taL">시작수록시점</td>
+                                                                    <td class="input_box">
+                                                                        <input type="text" maxlength="30" name="startPrdDe" id="startPrdDe" class="w100p">
+                                                                        <label for="startPrdDe"></label>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="taL">endPrdDe</td>
+                                                                    <td class="taL">종료수록시점</td>
+                                                                    <td class="input_box">
+                                                                        <input type="text" maxlength="30" name="endPrdDe" id="endPrdDe" class="w100p">
+                                                                        <label for="endPrdDe"></label>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="taL">newEstPrdCnt</td>
+                                                                    <td rowspan="2" class="taL">최신자료기준</td>
+                                                                    <td class="taL">최근수록시점 개수</td>
+                                                                    <td class="input_box">
+                                                                        <input type="text" maxlength="30" name="newEstPrdCnt" id="newEstPrdCnt" value="3" class="w100p">
+                                                                        <label for="newEstPrdCnt"></label>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="taL">prdInterval</td>
+                                                                    <td class="taL">수록시점 간격</td>
+                                                                    <td class="input_box">
+                                                                        <input type="text" maxlength="30" name="prdInterval" id="prdInterval" class="w100p">
+                                                                        <label for="prdInterval"></label>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <div class="tr_txtbox">
+                                                                <span>결과(Output)</span>
+                                                            </div>
+                                                            <p class="point_02">인구, 가구 및 주택 – 읍면동(연도 끝자리 0, 5), 시군구(그 외 연도)</p>
+                                                            <div class="borderWrite_col_wrap">
+                                                                <table class="borderWrite_col unset">			
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="fst taL" scope="col">행정구역별(읍면동)</th>
+                                                                            <th scope="col" class="taL">항목</th>
+                                                                            <th scope="col" class="taL">2021</th>
+                                                                            <th scope="col" class="taL">2022</th>
+                                                                            <th scope="col" class="taL">2023</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="fst taL">전국</td>					
+                                                                            <td class="taL">총인구 (명)</td>			
+                                                                            <td class="taL">51738071</td>							
+                                                                            <td class="taL">51692272</td>						
+                                                                            <td class="taL">51774521</td>						
+                                                                        </tr>	
+                                                                    </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="tr_txtbox">
+                                                        <span>SDMX 결과</span>
+                                                    </div>
+                                                    <div class="borderWrite_col_wrap">
+                                                        <table class="borderWrite_col">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="pd10">
+                                                                        <textarea readonly="readonly" title="JSON 결과" rows="4" class="w_100pct">MT_ZTITLE</textarea>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    </ul>
+                                </div>
+                                    <div class="btn_email">
+                                        <button type="button" class="btn_type02">
+                                            통계서비스기획과
+                                        </button>
+                                    </div>
+                            </div>
+                            <!-- 팝업 -->
+                            <div class="st_list_popup_wrap pop_type01" >
+                                <div class="st_list_popup">
+                                <div class="popup_head">
+                                    <p class="tit">소스보기</p>
+                                </div>
+                                <div class="popup_cnt scroll">
+                                    <div class="img_box">
+                                        <img src="/" alt="이미지 준비중">
+                                    </div>
+                                    <div class="tr_txtbox">
+                                        <span>소스</span>
+                                    </div>
+                                    <!-- *선택된 button에 클래스 tab_on 추가됩니다. -->
+                                    <div class="tab_box">
+                                        <ul class="tab_depth2_ul" role="tablist">
+                                            <li class="tab_depth2">
+                                                <button type="button" role="tab" class="tab_btn tab_on">JSP</button>
+                                                <div class="tab_depth2_div source_box">
+                                                    내용입력
+                                                </div>
+                                            </li>
+                                            <li class="tab_depth2">
+                                                <button type="button" role="tab" class="tab_btn">R</button>
+                                                <div class="tab_depth2_div source_box">
+                                                    내용입력
+                                                </div>
+                                            </li>
+                                            <li class="tab_depth2">
+                                                <button type="button" role="tab" class="tab_btn">R</button>
+                                                <div class="tab_depth2_div source_box">
+                                                    Python
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button type="button" class="close">
+                                    <span class="Hidden">닫기</span>
+                                </button>
+                                </div>
+                            </div>
+                            <!-- //팝업 -->
+                              <!-- 팝업 주기정보-->
+                            <div class="st_list_popup_wrap pop_type02" >
+                                <div class="st_list_popup">
+                                <div class="popup_head">
+                                    <p class="tit">주기코드 및 시점</p>
+                                </div>
+                                <div class="popup_cnt scroll">
+                                    <h3>※ 주기에 따른 시점</h3>
+                                    <div class="tab_box m_t_10">
+                                        <div class="borderWrite_col_wrap">
+                                        <table class="borderWrite_col">
+                                            <caption class="Hidden">주기에 따른 시점 정보로 주기, 주기변수(prdSe), 시점변수 입력형식(startPrdDe, endPrdDe)을 제공합니다</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th rowspan="2" scope="col">주기</th>
+                                                    <th rowspan="2" scope="col">설명</th>
+                                                    <th rowspan="2" scope="col" class="t_blue">입력값<br><strong class="t_blue">(prdSe)</strong></th>
+                                                    <th colspan="2" scope="col">출력값</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">JSON<br>(PRD_SE)</th>
+                                                    <th scope="col">SDMX<br>(FREQ)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>일</td>
+                                                    <td class="taL">1일 주기</td>
+                                                    <td><strong class="t_blue">D</strong></td>
+                                                    <td>D</td>
+                                                    <td>D</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>일</td>
+                                                    <td class="taL">1개월 주기</td>
+                                                    <td><strong class="t_blue">M</strong></td>
+                                                    <td>M</td>
+                                                    <td>M</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>분기</td>
+                                                    <td class="taL">1개월 주기</td>
+                                                    <td><strong class="t_blue">Q</strong></td>
+                                                    <td>Q</td>
+                                                    <td>Q</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>반기</td>
+                                                    <td class="taL">3개월 주기</td>
+                                                    <td><strong class="t_blue">H</strong></td>
+                                                    <td>H</td>
+                                                    <td>H</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>년</td>
+                                                    <td class="taL">1년 주기</td>
+                                                    <td><strong class="t_blue">Y</strong></td>
+                                                    <td>Y</td>
+                                                    <td>Y</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2년</td>
+                                                    <td class="taL">2년 주기</td>
+                                                    <td><strong class="t_blue">Y</strong></td>
+                                                    <td>Y</td>
+                                                    <td>Y</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3년</td>
+                                                    <td class="taL">3년 주기</td>
+                                                    <td><strong class="t_blue">Y</strong></td>
+                                                    <td>Y</td>
+                                                    <td>Y</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4년</td>
+                                                    <td class="taL">4년 주기</td>
+                                                    <td><strong class="t_blue">Y</strong></td>
+                                                    <td>Y</td>
+                                                    <td>Y</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5년</td>
+                                                    <td class="taL">5년 주기</td>
+                                                    <td><strong class="t_blue">Y</strong></td>
+                                                    <td>Y</td>
+                                                    <td>Y</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10년</td>
+                                                    <td class="taL">10년 주기</td>
+                                                    <td><strong class="t_blue">Y</strong></td>
+                                                    <td>Y</td>
+                                                    <td>Y</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>부정기</td>
+                                                    <td class="taL">1회한, 수시 등</td>
+                                                    <td><strong class="t_blue">IR</strong></td>
+                                                    <td>IR</td>
+                                                    <td>IR</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="close">
+                                    <span class="Hidden">닫기</span>
+                                </button>
+                                </div>
+                            </div>
+                            <!-- //팝업 주기정보 -->
+                               <!-- 팝업 시점정보-->
+                            <div class="st_list_popup_wrap pop_type03" >
+                                <div class="st_list_popup">
+                                <div class="popup_head">
+                                    <p class="tit">주기코드 및 시점</p>
+                                </div>
+                                <div class="popup_cnt scroll">
+                                    <h3>※ 주기에 따른 시점</h3>
+                                    <div class="tab_box m_t_10">
+                                        <div class="borderWrite_col_wrap">
+                                        <table class="borderWrite_col">
+                                            <caption class="Hidden">주기에 따른 시점 정보로 주기, 주기변수(prdSe), 시점변수 입력형식(startPrdDe, endPrdDe)을 제공합니다</caption>
+										<thead>
+											<tr>
+												<th scope="col">주기</th>
+												<th scope="col">주기변수<br>(prdSe)</th>
+												<th scope="col" colspan="2">시점변수 입력형식<br><strong class="t_blue">(startPrdDe, endPrdDe)</strong></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>일</td>
+												<td>D</td>
+												<td class="taL"><strong class="t_blue">YYYYMMDD</strong></td>
+												<td>ex)20140101</td>
+											</tr>
+											<tr>
+												<td>월</td>
+												<td>D</td>
+												<td class="taL"><strong class="t_blue">YYYYMM(MM:01~12)</strong></td>
+												<td>ex)201401</td>
+											</tr>
+											<tr>
+												<td>격월</td>
+												<td>M</td>
+												<td class="taL"><strong class="t_blue">YYYYMM(MM:홀수월)</strong></td>
+												<td>ex)201401, 201403</td>
+											</tr>
+											<tr>
+												<td>분기</td>
+												<td>Q</td>
+												<td class="taL"><strong class="t_blue">YYYYQQ(QQ:01～04)</strong></td>
+												<td>ex)201401</td>
+											</tr>
+											<tr>
+												<td>반기</td>
+												<td>S</td>
+												<td class="taL"><strong class="t_blue">YYYYHH(HH:01,02)</strong></td>
+												<td>ex)201401</td>
+											</tr>
+											<tr>
+												<td>년</td>
+												<td>Y</td>
+												<td class="taL"><strong class="t_blue">YYYY</strong></td>
+												<td>ex)2014</td>
+											</tr>
+											<tr>
+												<td>2년</td>
+												<td>Y</td>
+												<td class="taL"><strong class="t_blue">YYYY</strong></td>
+												<td>ex)2014, 2016..</td>
+											</tr>
+											<tr>
+												<td>3년</td>
+												<td>Y</td>
+												<td class="taL"><strong class="t_blue">YYYY</strong></td>
+												<td>ex)2014, 2017..</td>
+											</tr>
+											<tr>
+												<td>4년</td>
+												<td>Y</td>
+												<td class="taL"><strong class="t_blue">YYYY</strong></td>
+												<td>ex)2014, 2018..</td>
+											</tr>
+											<tr>
+												<td>5년</td>
+												<td>Y</td>
+												<td class="taL"><strong class="t_blue">YYYY</strong></td>
+												<td>ex)2014, 2019..</td>
+											</tr>
+											<tr>
+												<td class="t_a_c">10년</td>
+												<td class="t_a_c">Y</td>
+												<td class="taL"><strong class="t_blue">YYYY</strong></td>
+												<td class="t_a_c">ex)2014, 2024..</td>
+											</tr>
+											<tr>
+												<td>부정기</td>
+												<td>IR</td>
+												<td class="taL"><strong class="t_blue">YYYY, YYYYMM, YYYYMMDD</strong></td>
+												<td>ex)2014, 20140101..</td>
+											</tr>
+										</tbody>
+                                        </table>
+                                    </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="close">
+                                    <span class="Hidden">닫기</span>
+                                </button>
+                                </div>
+                            </div>
+                            <!-- //팝업 시점정보 -->
+                        </div>
+                        <!-- // 통계 목록 테이블  -->
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- //메인 컨텐츠 -->
+
+        <!-- 푸터 -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="footer-in">
+                    <div class="f-logo">
+                        <img src="img/common/foot_logo.png" class="logo-im" alt="해양수산부">
+                    </div>
+                    <div class="f-cnt">
+                        <div class="f-info">
+                            <p class="info-addr">(우)30110 세종특별자치시 다솜2로 94(어진동) 정부세종청사 5동</p>
+                            <p class="info-cs">시스템문의 <strong class="strong">044-200-5497</strong>(월~금 9:00~18:00, 공휴일 제외)</p>
+                        </div>
+                        <p class="f-txt">이 사이트는 1920 x 1080에 최적화 되어있습니다.</p>
+                    </div>
+                    <div class="select">
+                        <select>
+                            <option>관련사이트</option>
+                        </select>
+                    </div>
+                    <div class="f-btm">
+                        <div class="f-btm-text">
+                            <div class="f-menu">
+                                <a href="#">이용안내</a>
+                                <a href="#" class="point">개인정보처리방침</a>
+                                <a href="#">이메일무단수집거부</a>
+                                <a href="#">담당자 연락처</a>
+                            </div>
+                            <p class="f-copy">Copyright (C) Ministry of Oceans and Fisheries. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //푸터-->
+    </div> 
+</body>
+</html>
