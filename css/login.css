@@ -16,8 +16,17 @@
 .login_wrap .login-form-area .login_left {width: calc((100% - 150px) / 2);}
 .login_wrap .login-form-area .login_left .fieldset {width: 100%;}
 .login_wrap .login-form-area .form_group .form_conts {display: flex;flex-direction: column; width: 100%; }
-.login_wrap .login-form-area .form_group .form_conts > input {width: 100%;}
+.login_wrap .login-form-area .form_group .form_conts > input {width: 100%; padding: 10px 0; color: #555;}
 .login_wrap .login-form-area .login_left .btnPrimary{width: 100%; padding: 10px; border-radius: 5px;}
 .login_wrap .login-form-area .login_left .login_list{display: flex; gap: 5px;}
+.login_wrap .login-form-area .login_left .login_list li a{border-right: 1px solid ##d8d8d8;}
+.login_wrap .login-form-area .login_left .login_list li a:last-child {border-right: unset;}
 /* right */
 .login_wrap .login-form-area .login_right{padding: 10px 30px;}
+.login_wrap .login-form-area .login_right .login_info p {color: #555;}
+
+/* 도움말 */
+.login_help_area {width: 100%; background: #edf1f5; border: 1px solid #e4e4e4;}
+.login_help_area .navy{text-align: left; font-weight: bold;}
+.login_help_area .login_help_list li{padding: 10px 0; color: #555; margin-top: 5px;}
+.login_help_area .login_help_list li::before {content: "ㆍ"; position: absolute; top: 0; left: 0;}
