@@ -17,8 +17,7 @@ html, body {width:100%; height:100%; font-family: 'Noto Sans KR';}
 table, td{vertical-align: middle;}
 p{font-size: 16px; text-align: center;}
 time{color: #ededed; font-size: 14px;}
-
-
+ul, ol {list-style: none;}
 
 /* text-align */
 .tc{text-align: center;}
