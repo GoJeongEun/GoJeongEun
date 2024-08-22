@@ -38,7 +38,7 @@ time{color: #ededed; font-size: 14px;}
 .success{color: #198754;}
 .warning{color: #ffc107;}
 .danger{color: #dc3545;}
-
+.navy{color: #223b5b;}
 
 /* bg-color */
 .navyBG{color: #223b5b;}
@@ -49,3 +49,4 @@ time{color: #ededed; font-size: 14px;}
 .txt_area{display: flex; justify-content: space-between;}
 
 /* btn_area */
+.btnPrimary{background: #0d6efd; color: #fff; min-width: ;}
