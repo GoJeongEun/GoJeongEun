@@ -2,4 +2,11 @@
 /* font */
 @import url('../css/font.css');
 
-
+/* sub_left_aside.html */
+/* 서브 location */
+.location{text-align: right;}
+.location li{float: left; padding-left: 20px;}
+.location .item a {display: inline-block; color: #555; font-size: 19px;}
+.location .item a > span {position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: polygon(0 0, 0 0, 0 0);}
+.location .item a > i {vertical-align: baseline;}
+.location_area > ul li + li::before{position: absolute; content: "\EA6E"; display: inline-block; font-size: 20px;}
