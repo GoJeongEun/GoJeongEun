@@ -20,6 +20,17 @@ table, td{vertical-align: middle;}
 p{font-size: 16px; text-align: center;}
 ul, ol {list-style: none;}
 
+.wrap{min-height: 100%;display: block;}
+/* head */
+.head{width: 100%; display: flex; align-items: center; justify-content: space-between;}
+.head .logo {padding: 20px;}
+.head .logo > p{font-weight: 400; font-size: 20px;}
+.head .nav_ul {display: flex;}
+.head .mode_change{float: right;}
+.mode_change .mode i {color: #fff; font-size: 20px; transition: all 0.5s; padding: 10px;opacity: 0;}
+.mode_change div{display: flex; justify-content: center; align-items: center;}
+.mode_change .mode i.active {opacity: 1;}
+
 /* text-align */
 .tc{text-align: center;}
 
@@ -59,3 +70,4 @@ ul, ol {list-style: none;}
 /* btn_area */
 .btn_Primary{background: #0d6efd; border: 1px solid #d3e1fb; }
 .btn_Success{background: #eef7f0; border: 1px solid #cee9d4;}
+
