@@ -44,5 +44,6 @@
 .login_help_area .t_navy::before {content: "\EF28"; font-family: 'remixicon'; font-style: normal; font-size: 26px; color: #223b5b; margin-right: 3px;}
 .login_help_area .login_help_list li{color: #555; margin-top: 5px; position: relative; padding-left: 30px;}
 .login_help_area .login_help_list li::before {content: "ㆍ"; position: absolute; top: 0; left: 0; display: block; box-sizing: border-box;}
-/* a링크 텍스트 밑줄 currentColor - (현재 글자색과 동일하게 유지) */
+
+/* help a링크 텍스트 밑줄 currentColor - (현재 글자색과 동일하게 유지) */
 .login_help_area .login_help_list li a {text-decoration: underline; text-decoration-color: currentColor; color: #555; text-underline-offset: 5px; text-underline-position: under;}
