@@ -172,15 +172,6 @@ a:active {
 button {
 	cursor: pointer;
 }
-input {
-	
-}
-select {
-	
-}
-button {
-	
-}
 fieldset {
 	margin: 0px; padding: 0px; border: currentColor; border-image: none;
 }

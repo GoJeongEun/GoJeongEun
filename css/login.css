@@ -40,7 +40,7 @@
 
 /* 도움말 */
 .login_help_area {width: 100%; background: #edf1f5; border: 1px solid #e4e4e4; padding: 20px 15px;}
-.login_help_area .t_navy{text-align: left; font-weight: bold; font-size: 24px;}
+.login_help_area .t_navy{text-align: left; font-weight: bold; font-size: 24px; color:#223b5b;}
 .login_help_area .t_navy::before {content: "\EF28"; font-family: 'remixicon'; font-style: normal; font-size: 26px; color: #223b5b; margin-right: 3px;}
 .login_help_area .login_help_list li{color: #555; margin-top: 5px; position: relative; padding-left: 30px;}
 .login_help_area .login_help_list li::before {content: "ㆍ"; position: absolute; top: 0; left: 0; display: block; box-sizing: border-box;}
