@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+.test_icon::before {content: "\F303;";font-family: 'remixicon'; font-style: normal; font-size: 24px; color: blue;}
+.btn {border-radius: 4px;background-color: #f4511e;border: none;color: #FFFFFF;text-align: center;font-size: 28px;padding: 20px;width: 200px;transition: all 0.5s;cursor: pointer;margin: 5px;}
+.btn span {cursor: pointer;display: inline-block;position: relative;transition: 0.5s;}
+.btn span:after {content: '\F2E5';position: absolute;opacity: 0;top: 0;right: -20px;transition: 0.5s;}
+.btn:hover span {padding-right: 25px;}
+.btn:hover span:after {opacity: 1;right: 0;}
+
+ /* 각 아이템 소개 타이틀 */
+ .h_title{font-size: 24px; font-weight: bold; color: #222;}
+ .item_area{display: flex; padding: 15px 10px; border: 1px solid #dfdfdf; background: #fff; box-shadow: 3px 30px 30px rgba(0, 0, 0, 0.05); height: 40px; width: calc(100% - 300px);}
+ .item_area:hover {background: #ffc107; opacity: 0.8; }
+ .item_area .item{display: inline-flex; justify-content: center; align-items: center;}
+ .item_area .item a::before{width: 0; height: 0px; transition: all 0.5s;}
+ .item_area .item a:hover::before {width: auto; height: 1px; background: #223b5b;}
+ .item_area .item a > .tag{padding: 10px 5px; border: 1px solid #dfdfdf; min-width: 80px; width: auto; box-sizing: border-box;}
+ .item_area .item a > h4{font-size: 20px;}
+ .item_area .item a span.date{color: #808080; font-size: 17px;}
+
+
+ /* 호버링을 지원하지 않는 장치(손가락 사용)에 적용될 스타일 - 스마트폰 */
+@media (any-hover: none) {
+    .hover-button {
+        width: 60px;
+        height: 60px;
+    }
+}
