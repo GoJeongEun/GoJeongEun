@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>해양수산통계</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    
+    <link href="css/stat_popup.css" type="text/css" rel="stylesheet" />
+    <script>
+        $(document).ready(function() {
+            function adjustGridCntHeight() {
+                // .head_tit의 높이 가져오기
+                var headTitHeight = $('.head_tit').outerHeight();
+                
+                // .grid_table_wrap의 패딩 값 가져오기
+                var wrapPaddingTop = parseInt($('.grid_table_wrap').css('padding-top'));
+                var wrapPaddingBottom = parseInt($('.grid_table_wrap').css('padding-bottom'));
+                
+                // 현재 화면의 세로값 가져오기
+                var windowHeight = $(window).height();
+                
+                // .head_tit의 높이와 .grid_table_wrap의 패딩을 제외한 화면 높이 계산
+                var gridCntHeight = windowHeight - headTitHeight - wrapPaddingTop - wrapPaddingBottom;
+                
+                // .grid_cnt의 높이 설정
+                $('.grid_cnt').height(gridCntHeight);
+            }
+
+            // 페이지 로드 시와 윈도우 크기 조정 시에 높이 조정
+            adjustGridCntHeight();
+            $(window).resize(adjustGridCntHeight);
+            
+        });
+    </script>
+</head>
+<body>
+    <div class="grid_table_wrap">
+        <div class="head_tit">
+            <p>제목이 들어옵니다.</p>
+        </div>
+        <div class="grid_cnt">
+            <div class="grid_cnt_box">
+                그리드
+            </div>
+        </div>
+    </div>
+</body>
+</html>

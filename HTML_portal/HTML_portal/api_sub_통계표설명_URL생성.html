@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해양수산통계공유서비스</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/api/layout.js"></script>
+    <script src="js/api/sub.js"></script>
+    <link href="css/api/sub.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+   <div class="wrap" id="wrap">
+            <!-- 상단 배너영역  -->
+            <div id="header-top">
+                <div class="toggle-wrap">
+                    <div class="toggle-head">
+                        <div class="inner">
+                            <span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+                            <button type="button" class="btn btn-txt ico-arr-down toggle-btn xsm">공식 누리집 확인방법<span
+                                    class="sr-only">열기</span></button>
+                        </div>
+                    </div>
+                    <div class="toggle-body">
+                        <div class="inner">
+                            <dl class="dl nuri">
+                                <dt class="dt">공식 누리집 주소 확인하기</dt>
+                                <dd class="dd">go.kr 주소를 사용하는 누리집은 대한민국 정부기관이 관리하는 누리집입니다.<br class="br">이밖에 or.kr 또는 .kr등 다른 도메인 주소를
+                                    사용하고
+                                    있다면 아래 URL에서
+                                    도메인 주소를 확인해
+                                    보세요</dd>
+                                <dd><a href="/search.do" class="btn btn-txt ico-go xsm" target="_blank">운영중인 공식 누리집보기</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //상단 배너영역  -->
+
+            <!-- 헤더 영역 -->
+        <header id="header">
+            <div class="header-in">
+                <div class="header-body">
+                    <div class="inner">
+                        <div class="hade-in">
+                            <h1 class="logo">
+                                <a href="main.html">
+                                    <img src="img/api/sub/sub_logo.png" alt="해양수산통계">
+                                </a>
+                            </h1>
+                            <!-- 메뉴 -->
+                            <nav class="head-gnb">
+                                <div class="inner">
+                                    <ul class="gnb">
+                                        <li class="depth-1">
+                                            <a href="#" class="link"><span class="text">소개 및 이용방법</span></a>
+                                            <div class="depth-2">
+                                                <div class="depth-2-wrap">
+                                                    <ul class="depth-2-ul">
+                                                        <li><a href="#" class="link"><span class="text small">서비스소개</span></a></li>
+                                                        <li><a href="#" class="link"><span class="text small">통계정보활용약관</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="depth-1">
+                                            <a href="#" class="link"><span class="text">활용신청</span></a>
+                                            <div class="depth-2">
+                                                <div class="depth-2-wrap">
+                                                    <ul class="depth-2-ul">
+                                                        <li><a href="#" class="link"><span class="text small">활용신청</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="depth-1">
+                                            <a href="#" class="link"><span class="text">개발가이드</span></a>
+                                            <div class="depth-2">
+                                                <div class="depth-2-wrap">
+                                                    <ul class="depth-2-ul">
+                                                        <li><a href="#" class="link"><span class="text small">통계목록</span></a></li>
+                                                        <li><a href="#" class="link"><span class="text small">통계자료</span></a></li>
+                                                        <li><a href="#" class="link"><span class="text small">통계설명</span></a></li>
+                                                        <li><a href="#" class="link"><span class="text small">통계표설명</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="depth-1">
+                                            <a href="#" class="link"><span class="text">커뮤니티</span></a>
+                                            <div class="depth-2">
+                                                <div class="depth-2-wrap">
+                                                    <ul class="depth-2-ul">
+                                                        <li><a href="#" class="link"><span class="text small">공지사항</span></a></li>
+                                                        <li><a href="#" class="link"><span class="text small">FAQ</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav> 
+                            <!-- 메뉴 -->
+                            <!--- 유틸 -->
+                            <div class="head-util">
+                                <a href="#" class="login-btn"><span class="sr-only">로그인</span></a>
+                                <a href="#" class="siteMap-btn"><span class="sr-only">전체메뉴</span></a>
+                            </div>
+                            <!--- //유틸 -->
+
+                            <!-- 사이트맵-->
+                            <div class="siteMap-menu">
+                                <div class="siteMap-in ">
+                                    <div class="inner">
+                                        <ul class="gnb">
+                                            <li class="mo-top">
+                                                <a href="#" class="close open"></a>
+                                            </li>
+                                            <li class="depth-1">
+                                                <a href="#" class="link"><span class="text">소개 및 이용방법</span></a>
+                                                <div class="depth-2">
+                                                    <div class="depth-2-wrap">
+                                                        <ul class="depth-2-ul">
+                                                            <li><a href="#" class="link"><span class="text small">서비스소개</span></a></li>
+                                                            <li><a href="#" class="link"><span class="text small">통계정보활용약관</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="depth-1">
+                                                <a href="#" class="link"><span class="text">활용신청</span></a>
+                                                <div class="depth-2">
+                                                    <div class="depth-2-wrap">
+                                                        <ul class="depth-2-ul">
+                                                            <li><a href="#" class="link"><span class="text small">활용신청</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="depth-1">
+                                                <a href="#" class="link"><span class="text">개발가이드</span></a>
+                                                <div class="depth-2">
+                                                    <div class="depth-2-wrap">
+                                                        <ul class="depth-2-ul">
+                                                            <li><a href="#" class="link"><span class="text small">통계목록</span></a></li>
+                                                            <li><a href="#" class="link"><span class="text small">통계자료</span></a></li>
+                                                            <li><a href="#" class="link"><span class="text small">통계설명</span></a></li>
+                                                            <li><a href="#" class="link"><span class="text small">통계표설명</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="depth-1">
+                                                <a href="#" class="link"><span class="text">커뮤니티</span></a>
+                                                <div class="depth-2">
+                                                    <div class="depth-2-wrap">
+                                                        <ul class="depth-2-ul">
+                                                            <li><a href="#" class="link"><span class="text small">공지사항</span></a></li>
+                                                            <li><a href="#" class="link"><span class="text small">FAQ</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="mo_menu_bottom">
+                                            <a href="#"><span>로그인</span></a>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="pc-top">
+                                    <a href="#" class="close open"></a>
+                                </div>
+                                <div class="mo_background"></div> 
+                            </div>
+                             <!-- //사이트맵-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 헤더 영역 -->
+        
+        <!-- 메인 컨텐츠 -->
+        <div class="container">
+            <!-- 서브 메뉴 위치 -->
+            <div class="location">
+                <div class="inner">
+                    <div class="location_area">
+                        <div class="location_List">
+                            <ul class="sub_dep1">
+                                <li class="home">
+                                    <a href="#" class="sr-only">홈으로 이동</a>
+                                    <span></span>
+                                </li>
+                                <li class="sub_dep1List">
+                                    <a href="#" class="sub_dep1Link">
+                                        개발가이드
+                                    </a>
+                                    <ul class="sub_dep2List">
+                                        <li>
+                                            <a href="#">소개 및 이용방법</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">활용신청</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">개발 가이드</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">커뮤니티</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">이용현황</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub_dep1List">
+                                    <a href="#" class="sub_dep1Link">
+                                         통계목록
+                                    </a>
+                                    <ul class="sub_dep2List">
+                                        <li>
+                                            <a href="#">통계자료</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">활용신청</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">개발 가이드</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">커뮤니티</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">이용현황</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// 서브 메뉴 위치 -->
+            <div class="sub_layout">
+                <div class="inner">
+                    <div class="sub_title_area">
+                        <div class="sub_title">
+                            <h1 class="fontSC6">통계표설명</h1>
+                            <p>통계자료 이용시 참고할 수 있도록 통계표설명자료를 합제공니다. 출력포맷으로 JSON과 XML을 제공합니다.</p>
+                        </div>
+                    </div>
+                    <div id="content">
+                        <!-- 상단 탭 버튼 선택시 active 클래스 부여 -->
+                        <div class="top_tab_btn_wrap">
+                            <div class="top_btn_tab_area">
+                                <ul class="top_btn_tabList">
+                                    <li class="top_btn_tabItem">
+                                        <button type="button">상세기능</button>
+                                        <div class="top_btn_dep2">
+                                            <ul class="btn_tab_dep2List">
+                                                <li class="btn_tab_dep2Item active">
+                                                    <button type="button" class="dep2Item_btn">JSON</button>
+                                                    <div class="btn_tab_dep3">
+                                                        <ul class="btn_tab_dep3List">
+                                                            <li class="btn_tab_dep3Item active">
+                                                                <button type="button">통계표 명칭</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">기관 명칭</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">수록정보</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">분류/항목</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">주석</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">단위</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">출처</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">가중치</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">자료갱신일</button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="btn_tab_dep2Item ">
+                                                    <button type="button" class="dep2Item_btn">SDMX</button>
+                                                    <div class="btn_tab_dep3">
+                                                        <ul class="btn_tab_dep3List">
+                                                            <li class="btn_tab_dep3Item active">
+                                                                <button type="button">통계표 명칭</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">기관 명칭</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">수록정보</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">분류/항목</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">주석</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">단위</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">출처</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">가중치</button>
+                                                            </li>
+                                                            <li class="btn_tab_dep3Item">
+                                                                <button type="button">자료갱신일</button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="top_btn_tabItem">
+                                        <button type="button" class="active">
+                                            URL 생성
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="top_tab_right">
+                                <div class="right_button">
+                                    <div class="button_area">
+                                        <button type="button" class="btn_type01"><strong>개발가이드</strong> 다운받기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //상단 탭 -->
+                        <!-- URL 생성  -->
+                        <div class="tr_txtbox">
+                            <span>통계표선택</span>
+                        </div>
+                        <div class="borderWrite_wrap">
+                            <table class="borderWrite">
+                                <caption>본 게시판은 작성 게시판입니다.</caption>
+                                <colgroup>
+                                    <col style="width:150px;">
+                                    <col style="width:auto;">
+                                    <col style="width:150px;">
+                                    <col style="width:auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th><span>작성기관</span></th>
+                                        <td>
+                                            <input type="text" class="w_200" title="작성기관"> <a href="#" class="blue_btn"><span>작성기관 검색</span></a>
+                                        </td>
+                                        <th><span>통계조사명</span></th>
+                                        <td>
+                                            <input type="text" class="w_200" title="통계조사명"> <a href="#" class="blue_btn popup_btn"><span>통계조사명 검색</span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>통계표명</span></th>
+                                        <td>
+                                            <input type="text" class="w_200" title="통계표명">
+                                        </td>
+                                        <th><span>통계표 ID</span></th>
+                                        <td>
+                                            <input type="text" class="w_200" title="통계표 ID">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- 팝업 -->
+                            <div class="st_list_popup_wrap pop_type01" >
+                                <div class="st_list_popup">
+                                <div class="popup_head">
+                                    <p class="tit">작성기관 / 통계조사명 검색</p>
+                                </div>
+                                <div class="popup_cnt scroll">
+                                    <div class="popup_search">
+                                        <span class="input_box">
+                                            <label for="">작성기관</label>
+                                            <input type="text" class="w_200" title="작성기관">
+                                        </span>
+                                        <span class="input_box">
+                                            <label for="">통계조사명</label>
+                                            <input type="text" class="w_200" title="통계조사명">
+                                        </span>
+                                        <button type="button" class="blue_btn"><span>검색</span></button>
+                                    </div>
+                                    <div class="tab_box m_t_10">
+                                        <table class="borderList">
+                                            <caption>KOSIS 공유서비스 제공정보_통계목록을 제공합니다.</caption>
+                                            <colgroup>
+                                                <col style="width: 160px;">
+                                                <col style="width: auto">
+                                                <col style="width: 140px;">
+                                                <col style="width: 70px;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>조사기관</th>
+                                                    <th>통계조사명</th>
+                                                    <th>통계조사ID</th>
+                                                    <th>선택</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- 검색 결과 없을때 -->
+                                                <tr>
+                                                    <td colspan="4">
+                                                        검색 조건에 맞는 데이터가 없습니다.
+                                                    </td>
+                                                </tr>
+                                                <!-- //검색 결과 없을때 -->
+                                                <tr>
+                                                    <td>해양경찰청</td>
+                                                    <td>해양마약밀수사범검거현황</td>
+                                                    <td>2006154</td>
+                                                    <td><button type="button" class="blue_btn"><span>선택</span></button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>해양경찰청</td>
+                                                    <td>해양밀입충국자검거현황</td>
+                                                    <td>2006145</td>
+                                                    <td><button type="button" class="blue_btn"><span>선택</span></button></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <button type="button" class="close">
+                                    <span class="Hidden">닫기</span>
+                                </button>
+                                </div>
+                            </div>
+                            <!-- //팝업 -->
+                        </div>
+                        <div class="borderBtn center">
+                            <button type="button" class="big_btn navy">검색</button>
+                        </div>
+                        <div class="table_area m_t_40">
+                            <div class="table_top_area">
+                                <div class="table_top_left">
+                                    <p class="table_total">
+                                        전체 <strong>8</strong>건
+                                        <span class="line"></span>
+                                        현재페이지 
+                                        <strong>1/1</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <table class="borderList">
+                                <caption>공지사항 게시판 목록</caption>
+                                <colgroup>
+                                    <col style="width: 200px;">
+                                    <col style="width: auto">
+                                    <col style="width: 150px;">
+                                    <col style="width: 150px;">
+                                    <col style="width: 150px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 100px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>기관명</th>
+                                        <th>통계표명</th>
+                                        <th>통계표ID</th>
+                                        <th>통계조사명</th>
+                                        <th>수록기간</th>
+                                        <th>선택</th>
+                                        <th>통계표조회</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>대한민국통계연감 (999S)</td>
+                                        <td>전국 국유지</td>
+                                        <td>DT_999S_003059</td>
+                                        <td>한국통계연감</td>
+                                        <td>년 1943~1943</td>
+                                        <td><button type="button" class="blue_btn"><span>선택</span></button></td>
+                                        <td><a href="#"><img src="img/api/sub/btn_stat_search.png" alt="통계표조회"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>대한민국통계연감 (999S)</td>
+                                        <td>전국 국유지</td>
+                                        <td>DT_999S_003059</td>
+                                        <td>한국통계연감</td>
+                                        <td>년 1943~1943</td>
+                                        <td><button type="button" class="blue_btn"><span>선택</span></button></td>
+                                        <td><a href="#"><img src="img/api/sub/btn_stat_search.png" alt="통계표조회"></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- PC용 페이징 -->
+                            <div class="pagination">
+                                <a href="#" class="page_prev">
+                                    이전
+                                </a>
+                                <span class="on">1</span>
+                                <span class="link-dot">...</span>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#">6</a>
+                                <a href="#">7</a>
+                                <a href="#">8</a>
+                                <span class="link-dot">...</span>
+                                <a href="#">11</a>
+                                <a href="#" class="page_next">
+                                    다음
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 통계표 설명 분류 선택 *라디오 아이디와 table td id 맞춰주기-->
+                         <div class="tr_txtbox">
+                            <span>통계표 설명 분류선택</span>
+                         </div>
+                         <div class="guide_radio_box">
+                            <ul class="radio_box">
+                                <li class="radio_item">
+                                    <label for="tblIdForm" class="radiobox_wrap">
+                                        <input type="radio" id="tblIdForm" name="stat">
+                                        <span>통계표명칭</span>
+                                    </label>
+                                </li>
+                                <li class="radio_item">
+                                    <label for="orgIdForm" class="radiobox_wrap">
+                                        <input type="radio" id="orgIdForm" name="stat">
+                                        <span>기관명칭</span>
+                                    </label>
+                                </li>
+                                <li class="radio_item">
+                                    <label for="prdSeForm" class="radiobox_wrap">
+                                        <input type="radio" id="prdSeForm" name="stat">
+                                        <span>수록정보</span>
+                                    </label>
+                                </li>
+                                <li class="radio_item">
+                                    <label for="objIdForm" class="radiobox_wrap">
+                                        <input type="radio" id="objIdForm" name="stat">
+                                        <span>분류/항목</span>
+                                    </label>
+                                </li>
+                                <li class="radio_item">
+                                    <label for="cmtDcForm" class="radiobox_wrap">
+                                        <input type="radio" id="cmtDcForm" name="stat">
+                                        <span>주석</span>
+                                    </label>
+                                </li>
+                                <li class="radio_item">
+                                    <label for="objrangeForm" class="radiobox_wrap">
+                                        <input type="radio" id="objrangeForm" name="stat">
+                                        <span>단위</span>
+                                    </label>
+                                </li>
+                                <li class="radio_item">
+                                    <label for="objAreaForm" class="radiobox_wrap">
+                                        <input type="radio" id="objAreaForm" name="stat">
+                                        <span>출처</span>
+                                    </label>
+                                </li>
+                                <li class="radio_item">
+                                    <label for="josaUnitForm" class="radiobox_wrap">
+                                        <input type="radio" id="josaUnitForm" name="stat">
+                                        <span>가중치</span>
+                                    </label>
+                                </li>
+                                <li class="radio_item">
+                                    <label for="newContrainDataForm" class="radiobox_wrap">
+                                        <input type="radio" id="newContrainDataForm" name="stat">
+                                        <span>자료갱신일</span>
+                                    </label>
+                                </li>
+                            </ul>
+                         </div>
+                        <!-- //통계표 설명 분류 선택 -->
+                        <!-- 세부정보 입력 *선택값에 따라 예시 -->
+                         <div class="detail_table">
+                        <div class="tr_txtbox">
+                            <span>세부정보 입력</span>
+                        </div>
+                        <div class="borderWrite_wrap">
+                            <table class="borderWrite">
+                                <caption>세부정보 입력 양식으로 출력포맷, 기관코드, 통계표 ID를 제공합니다.</caption>
+                                <tbody>
+                                    <tr>
+                                        <td class="fotmatTd" rowspan="13" >
+                                            출력포맷
+                                            <select class="m_r_40">
+                                                <option>xml</option>
+                                            </select>
+                                        </td>
+                                        <!-- 통계표 명칭 td -->
+                                        <td class="tblIdForm">
+                                            기관코드
+                                            <input type="text" class="w_200" title="기관코드" id="">
+                                        </td>
+                                        <td class="tblIdForm">
+                                            통계표 ID
+                                            <input type="text" class="w_200" title="통계표ID" id="">
+                                        </td>
+                                        <!-- //통계표 명칭 td -->
+                                        <!-- 기관명칭 td -->
+                                        <td class="orgIdForm">
+                                            기관코드
+                                            <input type="text" class="w_200" title="기관코드" id="">
+                                        </td>
+                                         <!-- //기관명칭 td -->
+                                          <!-- 수록정보 -->
+                                           <td class="prdSeForm">
+                                                기관코드
+                                                <input type="text" class="w_200" title="기관코드" id="">
+                                           </td>
+                                           <td class="prdSeForm">
+                                                통계표ID
+                                                <input type="text" class="w_200" title="통계표ID" id="">
+                                           </td>
+                                           <td class="prdSeForm">
+                                                시점정보
+                                                <select class="m_r_40">
+                                                    <option>시작시점/끝시점</option>
+                                                </select>
+                                            </td>
+                                        <!-- //수록정보 -->
+                                         <!-- 분류/항목 -->
+                                          <td class="objIdForm">
+                                            기관코드
+                                            <input type="text" class="w_200" title="기관코드" id="">
+                                          </td>
+                                          <td class="objIdForm">
+                                            통계표ID
+                                            <input type="text" class="w_200" title="통계표ID" id="">
+                                          </td>
+                                          <td class="objIdForm">
+                                            분류코드
+                                            <input type="text" class="w_200" title="분류코드" id="">
+                                          </td>
+                                          <td class="objIdForm">
+                                            분류값코드
+                                            <input type="text" class="w_200" title="분류값코드" id="">
+                                          </td>
+                                          <!-- //분류/항목 -->
+                                           <!-- 주석 -->
+                                           <td class="cmtDcForm">
+                                            기관코드
+                                            <input type="text" class="w_200" title="기관코드" id="">
+                                          </td>
+                                          <td class="cmtDcForm">
+                                            통계표ID
+                                            <input type="text" class="w_200" title="통계표ID" id="">
+                                          </td>
+                                           <!-- //주석 -->
+                                           <!-- 단위 -->
+                                           <td class="objrangeForm">
+                                            기관코드
+                                            <input type="text" class="w_200" title="기관코드" id="">
+                                          </td>
+                                          <td class="objrangeForm">
+                                            통계표ID
+                                            <input type="text" class="w_200" title="통계표ID" id="">
+                                          </td>
+                                           <!-- //단위 -->
+                                           <!-- 출처 -->
+                                           <td class="objAreaForm">
+                                            기관코드
+                                            <input type="text" class="w_200" title="기관코드" id="">
+                                          </td>
+                                          <td class="objAreaForm">
+                                            통계표ID
+                                            <input type="text" class="w_200" title="통계표ID" id="">
+                                          </td>
+                                           <!-- //출처 -->
+                                            <!-- 자료갱신일 -->
+                                           <td class="newContrainDataForm">
+                                            기관코드
+                                            <input type="text" class="w_200" title="기관코드" id="">
+                                          </td>
+                                          <td class="newContrainDataForm">
+                                            통계표ID
+                                            <input type="text" class="w_200" title="통계표ID" id="">
+                                          </td>
+                                          <td class="newContrainDataForm">
+                                            수록주기
+                                            <input type="text" class="w_200" title="통계표ID" id="">
+                                            <a href="#" class="blue_btn"><span>주기정보</span></a>
+                                          </td>
+                                          <!-- //자료갱신일 -->
+                                    </tr>
+                                    <!-- 가중치 -->
+                                    <tr class="fst">
+                                        <td class="josaUnitForm"><strong>orgId</strong></td>
+                                        <td class="fst1 josaUnitForm"><strong>기관코드</strong></td>
+                                        <td class="josaUnitForm"><label><input type="text" maxlength="30" name="orgId" id="josaUnitFormInput1" style="width: 250px;" title="orgId"></label></td>
+                                    </tr>
+                                    <tr class="fst">
+                                        <td class="josaUnitForm"><strong>tblId</strong></td>
+                                        <td class="fst1 josaUnitForm"><strong>통계표ID</strong></td>
+                                        <td class="josaUnitForm"><label><input type="text" maxlength="30" name="tblId" id="josaUnitFormInput2" style="width: 250px;" title="통계표ID"></label></td>
+                                    </tr>
+                                    <tr class="fst">
+                                        <td class="josaUnitForm"><label for="objL1"><input type="text" maxlength="30" name="objL1" id="objL1" style="width: 150px;" title="분류 코드1"></label></td>
+                                        <td class="fst1 josaUnitForm"><strong>분류코드1</strong></td>
+                                        <td class="josaUnitForm"><label for="ovL1"><input type="text" maxlength="30" name="ovL1" id="ovL1" style="width: 250px;" title="분류코드1"></label></td>
+                                    </tr>
+                                    <tr class="fst">
+                                        <td class="josaUnitForm"><label for="objL2"><input type="text" maxlength="30" name="objL2" id="objL2" style="width: 150px;" title="분류 코드2"></label></td>
+                                        <td class="fst1 josaUnitForm"><strong>분류코드2</strong></td>
+                                        <td class="josaUnitForm"><label for="ovL2"><input type="text" maxlength="30" name="ovL2" id="ovL2" style="width: 250px;" title="분류 코드2"></label></td>
+                                    </tr>
+                                    <tr class="fst">
+                                        <td class="josaUnitForm"><label for="objL3"><input type="text" maxlength="30" name="objL3" id="objL3" style="width: 150px;" title="분류 코드3"></label></td>
+                                        <td class="fst1 josaUnitForm"><strong>분류코드3</strong></td>
+                                        <td class="josaUnitForm"><label for="ovL3"><input type="text" maxlength="30" name="ovL3" id="ovL3" style="width: 250px;" title="분류 코드3"></label></td>
+                                    </tr>
+                                    <tr class="fst">
+                                        <td class="josaUnitForm"><label for="objL4"><input type="text" maxlength="30" name="objL4" id="objL4" style="width: 150px;" title="분류 코드4"></label></td>
+                                        <td class="fst1 josaUnitForm"><strong>분류코드4</strong></td>
+                                        <td class="josaUnitForm"><label for="ovL4"><input type="text" maxlength="30" name="ovL4" id="ovL4" style="width: 250px;" title="분류 코드4"></label></td>
+                                    </tr>
+                                    <tr class="fst">
+                                        <td class="josaUnitForm"><label for="objL5"><input type="text" maxlength="30" name="objL5" id="objL5" style="width: 150px;" title="분류 코드5"></label></td>
+                                        <td class="fst1 josaUnitForm"><strong>분류코드5</strong></td>
+                                        <td  class="josaUnitForm"><label for="ovL5"><input type="text" maxlength="30" name="ovL5" id="ovL5" style="width: 250px;" title="분류 코드5"></label></td>
+                                    </tr>
+                                    <tr class="fst">
+                                        <td class="josaUnitForm"><label for="objL6"><input type="text" maxlength="30" name="objL6" id="objL6" style="width: 150px;" title="분류 코드6"></label></td>
+                                        <td class="fst1 josaUnitForm"><strong>분류코드6</strong></td>
+                                        <td class="josaUnitForm"><label for="ovL6"><input type="text" maxlength="30" name="ovL6" id="ovL6" style="width: 250px;" title="분류 코드6"></label></td>
+                                    </tr>
+                                    <tr class="fst">
+                                        <td class="josaUnitForm"><label for="objL7"><input type="text" maxlength="30" name="objL7" id="objL7" style="width: 150px;" title="분류 코드7"></label></td>
+                                        <td class="fst1 josaUnitForm"><strong>분류코드7</strong></td>
+                                        <td class="josaUnitForm"><label for="ovL7"><input type="text" maxlength="30" name="ovL7" id="ovL7" style="width: 250px;" title="분류 코드7"></label></td>
+                                    </tr>
+                                    <tr class="fst">
+                                        <td class="josaUnitForm"><label for="objL8"><input type="text" maxlength="30" name="objL8" id="objL8" style="width: 150px;" title="분류 코드8"></label></td>
+                                        <td class="fst1 josaUnitForm"><strong>분류코드8</strong></td>
+                                        <td class="josaUnitForm"><label for="ovL8"><input type="text" maxlength="30" name="ovL8" id="ovL8" style="width: 250px;" title="분류 코드8"></label></td>
+                                    </tr>
+                                    <tr class="fst">
+                                        <td class="josaUnitForm"><strong>ITEM</strong></td>
+                                        <td class="fst1 josaUnitForm"><strong>항목</strong></td>
+                                        <td class="josaUnitForm"><label for="item"><input type="text" maxlength="30" name="item" id="item" style="width: 250px;"></label></td>
+                                    </tr>
+                                     <!-- //가중치 -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                        <!-- //세부정보 입력  -->
+                        <div class="borderBtn center">
+                            <button type="button" class="big_btn navy"><span>URL 복사</span></button>
+                            <button type="button" class="big_btn line">URL 생성</button>
+                        </div>
+                        <div class="tr_txtbox">
+                            <span>생성된 URL</span>
+                        </div>
+
+                        <textarea title="결과" class="w_100pct h_300">
+
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- //메인 컨텐츠 -->
+
+        <!-- 푸터 -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="footer-in">
+                    <div class="f-logo">
+                        <img src="img/common/foot_logo.png" class="logo-im" alt="해양수산부">
+                    </div>
+                    <div class="f-cnt">
+                        <div class="f-info">
+                            <p class="info-addr">(우)30110 세종특별자치시 다솜2로 94(어진동) 정부세종청사 5동</p>
+                            <p class="info-cs">시스템문의 <strong class="strong">044-200-5497</strong>(월~금 9:00~18:00, 공휴일 제외)</p>
+                        </div>
+                        <p class="f-txt">이 사이트는 1920 x 1080에 최적화 되어있습니다.</p>
+                    </div>
+                    <div class="select">
+                        <select>
+                            <option>관련사이트</option>
+                        </select>
+                    </div>
+                    <div class="f-btm">
+                        <div class="f-btm-text">
+                            <div class="f-menu">
+                                <a href="#">이용안내</a>
+                                <a href="#" class="point">개인정보처리방침</a>
+                                <a href="#">이메일무단수집거부</a>
+                                <a href="#">담당자 연락처</a>
+                            </div>
+                            <p class="f-copy">Copyright (C) Ministry of Oceans and Fisheries. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //푸터-->
+    </div> 
+</body>
+</html>

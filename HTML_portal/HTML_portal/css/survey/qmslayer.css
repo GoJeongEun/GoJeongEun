@@ -1,0 +1,136 @@
+/****************************************************************************/
+
+/****************************************************************************/
+
+@charset "utf-8";
+	
+/********************************************************************************/
+
+/********************************************************************************/
+.answerContents {clear:both; height:900px; width:800px; padding-left:0px;}
+
+	.indvdlInfoLayer  {padding-bottom:5px;padding-left:25px;padding-right:25px;padding-top:5px}
+
+	.noticeLayer  {width:100%; height:auto;border:1px solid #dbdbdb; padding: 5px; overflow:auto;overflow-x:hidden; background:#f9f9f9; color:#666; box-sizing:border-box;}
+	.noticeLayer p {padding-bottom:2px; padding-top:2px;padding-left:2px; padding-right:2px}
+
+	.topImageLayer h1{ }
+	.topImageLayer li.imagelist {color:#333;font-weight:bold;height:70px;padding-bottom:7px;padding-left:5px;padding-right:5px;padding-top:43px;}
+
+	.indvdlInfoNotice {width:100%; border-top:1px dashed #ccc; text-align:center;}
+	.indvdlInfoNotice tr td {padding:2px 10px;}
+	
+	
+
+.answerContents.new {width:100%; height:100%; background:#fcfeff; overflow:auto; background:url(../../img/sub/bg_survey.png) no-repeat center top;}
+.answerContents.new table.answerInfo {width:100%; margin:0 auto; font-family:'Noto Sans KR', sans-serif;}
+.answerContents.new table.answerNotice td.top {padding-bottom:0; padding-bottom:0; }
+.answerContents.new  td.main {padding:0;}
+.answerContents.new  td.main .default {width:100%;}
+.answerContents.new .answerLogo {display:none;}
+.answerContents.new .topImageLayer {height:auto; padding:30px 20px 60px; text-align:center;}
+.answerContents.new .topImageLayer .imagelist {color:#000;line-height:35px;font-weight:bold;padding-bottom:0px;font-size:28px;text-align:center;font-family: 'SCoreDream6';}
+.answerContents.new .noticeLayer {font-size:18px; border:0; color:#000; background:transparent;}
+.answerContents.new .questionMain {margin:0 auto; margin-top:-50px; width:1200px; height:auto; box-sizing:border-box;}
+.answerContents.new .questionMainTb > li {overflow:hidden; margin-top:10px; background:#fff; padding:20px 20px; border:1px solid #e0e4ea; box-shadow:0px 0px 7px 2px #59768f24; border-radius:10px;}
+.answerContents.new .questionMainTb .num {z-index:2; position:relative; line-height:22px; font-size:18px; color:#fff; font-family: 'SCoreDream6'; color:#177ffa;}
+.answerContents.new .questionMainTb .column1 {position: relative; float:left; width:60px;}
+.answerContents.new .questionMainTb .column1::before {position: absolute; display:block; content: ''; left:-8px; top:-8px; width:30px; height:30px; background-color:#deedfe; border-radius:50%;}
+.answerContents.new .questionMainTb .column2 {float:left; width:calc(100% - 60px); font-size:15px; color:#555;}
+.answerContents.new input[type="radio"] {vertical-align:middle; margin-top:0;}
+.answerContents.new .questionMainTb .content {margin-bottom:10px; font-size:18px; line-height:22px; font-weight:bold; color:#393939; word-break:break-all;}
+table.exampleArray3 {width:100%;}
+table.exampleArray3 td {}
+table.exampleArray3 td.no_border_bottom {padding-bottom:5px; border-bottom:0;}
+table.exampleArray3 td input[type="text"], table.exampleArray3 textarea , .answerContents.new table.indvdlInfo th table.exampleArray2 td:last-child.etc input[type="text"] {padding:5px; box-sizing:border-box; width:100%; font-size:14px; font-family:'Noto Sans KR', sans-serif;}
+table.exampleArray3 td input[type="text"] {height:30px; line-height:28px;}
+.answerContents.new .priort + .matrix  {margin-top:0;}
+.answerContents.new .priort {display:inline-block;  padding:0px !important; width:100%;}
+.answerContents.new table.matrix {padding:0; border-top:1px solid #d5d5d5;}
+.answerContents.new select {height:30px; line-height:28px; box-sizing:border-box;font-family:'Noto Sans KR', sans-serif;font-size:14px;}
+.answerContents.new .priort {overflow:hidden;}
+.answerContents.new .priort li {margin-bottom:5px; width:100%; overflow:hidden;}
+.answerContents.new .priort li:bottom {margin-bottom:0px;}
+.answerContents.new .priort li span {line-height:30px; margin-right:10px;}
+.answerContents.new .cbuttonarea {margin:10px auto 20px; text-align:center; overflow:hidden; max-width:1200px; width:100%;}
+.answerContents.new .cbuttonarea a {transition:all 0.3s; display:block; border-radius:5px; height:50px; line-height:50px; background:#00174b; font-size:18px; color:#fff; width:calc(50% - 5px); float:left;}
+.answerContents.new .cbuttonarea a.no_btn {background:#898989; float:right;}
+.answerContents.new .cbuttonarea a:hover {background:#000511; text-decoration:none;}
+.answerContents.new .cbuttonarea a.no_btn:hover {background:#4e4e4e;;}
+.answerContents.new .indvdlInfoNotice {border:0;font-size:16px;}
+.answerContents.new .indvdlInfoNotice label {margin:0 10px 0 5px;}
+.answerContents.new .column2 p > label {font-size:15px; line-height:20px;}
+.answerContents.new .column2 p > label > input {margin-right:4px;}
+.answerContents.new .column2 p + p {margin-top:5px;}
+.answerContents.new table.exampleArray2 {width:100%;}
+.answerContents.new table.exampleArray2 td:first-child.no_border_bottom {padding-left:0; width:20px; vertical-align:top;}
+.answerContents.new table.exampleArray2 td:last-child.no_border_bottom {padding-left:0; width:calc(100% - 20px);}
+.answerContents.new table.exampleArray2 td:last-child.etc input[type="text"] {margin-top:2px; line-height:28px; height:30px; width:100%;}
+.answerContents.new .indvdlInfoLayer_info {margin:10px 0; background:#fff; padding:20px; border-radius:10px; border:1px solid #e0e4ea; box-shadow:0px 0px 7px 2px #59768f24;}
+.answerContents.new table.indvdlInfo {font-size:14px; border-top:1px solid #dde2e8; border-bottom:0;}
+.answerContents.new table.indvdlInfo th {box-sizing:border-box; background-color:#f9f9f9; line-height:20px; color:#000; padding:5px 10px;}
+table.matrix tbody td.content1, table.matrix tbody td.content2, table.matrix tbody td.content3 {font-weight:bold;}
+table.indvdlInfo td table.inside01 td:last-child{border-bottom:0;}
+table.indvdlInfo input[type="text"] {height:30px; line-height:28px; padding:5px; box-sizing:border-box; width:100%; font-size:14px; font-family:'Noto Sans KR', sans-serif;}
+table.indvdlInfo td {padding:5px;}
+table.indvdlInfo .inside01 td {padding:0;}
+table.indvdlInfo .inside01 .search_box {overflow:hidden;}
+table.indvdlInfo .inside01 .search_box .search_input {float:left;}
+table.indvdlInfo .inside01 .search_box .search_input input {width:170px; margin-right:4px;}
+table.indvdlInfo .inside01 .search_box .searchBtn {float:left; transition:all 0.3s; float:left; display:block; width:80px; height:30px; line-height:29px; font-size:14px; border:0; background:#0083c8; color:#fff; font-family:'Noto Sans KR', sans-serif; border-radius:5px;}
+table.indvdlInfo .inside01 .search_box .searchBtn:hover {background:#005d8f}
+table.indvdlInfo .inside01 .search_box.add .search_input {margin-right:4px; width:calc(100% - 114px);}
+table.indvdlInfo .inside01 .search_box.add .search_input input {width:100%;}
+table.indvdlInfo .inside01 .search_box.add .searchBtn {width:110px;}
+table.indvdlInfo .inside01 .searchText {display:inline-block; font-size:14px; color:#0100b3; font-weight:bold; margin-top:5px;}
+table.indvdlInfo .inside01 .number {overflow:hidden;}
+table.indvdlInfo .inside01 .number input[type="text"] {float:left; width:150px;}
+table.indvdlInfo .inside01 .number span {float:left; display:inline-block; width:20px; line-height:30px; font-size:20px; text-align:center;}
+
+@media screen and (max-width: 1200px) { 
+	
+	.answerContents.new {box-sizing:border-box;}
+	.answerContents.new table.answerInfo {width:100%;}
+	.answerContents.new .column2 p label {margin-bottom:5px;}
+	.indvdlInfoLayer {padding:5px 0;}
+	.answerContents.new .questionMain {width:100%; padding:0 20px;}
+    .answerContents.new .cbuttonarea {padding:0 20px; box-sizing: border-box;}
+	.answerContents.new .topImageLayer .imagelist {font-size:20px; line-height:25px;}
+	.answerContents.new .noticeLayer {font-size:15px;line-height:16px;}
+	table.indvdlInfo td table select {width:100%;}
+	
+}
+
+@media screen and (max-width: 640px) { 
+	
+
+	.answerContents.new .column2 p label {margin-bottom:5px; font-size:14px;}
+	.answerContents.new .column2 table.matrix {font-size:14px;}
+	.answerContents.new .priort {font-size:14px;}
+	.answerContents.new .column2 {font-size:14px;}
+	.answerContents.new table.exampleArray2 td.no_border_bottom {font-size:14px;}
+	.answerContents.new .priort select {font-size:14px;}
+	table.exampleArray3 td input[type="text"], table.exampleArray3 textarea, .answerContents.new table.exampleArray2 td:last-child.etc input[type="text"] {font-size:14px;}
+	.answerContents.new table.indvdlInfo {font-size:14px;line-height:16px;}
+	.answerContents.new select {font-size:14px;}
+	.answerContents.new .noticeLayer {font-size:14px;}
+	.answerContents.new .questionMain {padding:0 10px;}
+	.answerContents.new .questionMainTb .column1 {float:none; width:100%; margin-bottom:10px;}
+	.answerContents.new .questionMainTb .column2 {width:100%;}
+	table.indvdlInfo .inside01 .number input[type="text"] {width:calc(50% - 10px);}
+	table.indvdlInfo .inside01 .search_box .search_input input {width:100%; margin-right:0; margin-bottom:4px;}
+	table.indvdlInfo .inside01 .search_box .search_input {width:100%;}
+	table.indvdlInfo .inside01 .search_box .searchBtn {width:100%;}
+	.answerContents.new .indvdlInfoLayer_info {padding:10px;}
+	table.indvdlInfo .inside01 .search_box.add .search_input {width:100%; margin:0;}
+	table.indvdlInfo .inside01 .search_box.add .searchBtn {width:100%;}
+	.answerContents.new table.indvdlInfo th {width:100px;}
+	.answerContents.new .priort li span {float:left; display:block; width:40px;}
+	.answerContents.new .priort select {float:left; width:calc(100% - 50px);}
+    .answerContents.new .cbuttonarea a {width:100%; box-sizing:border-box; margin-bottom:10px; font-size:14px;}
+	.answerContents.new .indvdlInfoNotice {font-size:14px;}
+	.answerContents.new .cbuttonarea {padding:0 10px;}
+	.answerContents.new .questionMainTb .num {font-size:15px;}
+	.answerContents.new .questionMainTb .content {font-size:15px;}
+
+}
