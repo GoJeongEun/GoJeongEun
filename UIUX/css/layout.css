@@ -12,7 +12,7 @@ h3{font-family: 'Gwangyang'; font-size: 25px; font-weight: 600; color: #222;}
 .filterWrap .filterList .filterItem li + li {padding-left: 5px; margin-left: 5px;}
 .filterWrap .filterList .filterItem li + li::before {content: '|'; display: inline-block; width: 1px; height: 15px; color: #666;}
 .filterWrap .filterList .filterItem li a {color: #444; font-size: 14px;}
-.filterWrap .filterList .filterItem li a.active{color: #222; font-weight: bold; }
+.filterWrap .filterList .filterItem li a.active{color: #222; font-weight: bold;}
 
 
 /* card  */
