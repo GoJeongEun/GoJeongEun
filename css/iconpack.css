@@ -23,8 +23,13 @@
  .item_area .item a span.date{color: #808080; font-size: 17px;}
 
 
-
+/*
+    ===================================
+      hover : none ( mobile active X) 
+      touch 가능 (스마트폰, 터치스크린)
+    ===================================
+    */
  /* mobile일 때 hover 액션 없애고 touch 기기 일 떄 css 따로 주기 */
  @media (hover: none) and (pointer: coarse) {
-    /* touch 가능 (스마트폰, 터치스크린) */
+    
   }

@@ -2,3 +2,32 @@
 
 /* header */
 h3{font-family: 'Gwangyang'; font-size: 25px; font-weight: 600; color: #222;}
+/* con1 - title */
+.conCardTit {font-size: 25px; text-align: left;}
+/* filter */
+.filterWrap {display: flex; justify-content: space-between; height: 50px;}
+.filterSel{font-size: 14px; display: inline-block; box-sizing: border-box;}
+.filterWrap .filterList{display: flex; flex-wrap: wrap; align-items: center; box-sizing: border-box;}
+.filterWrap .filterList .filterItem {font-size: 14px;}
+.filterWrap .filterList .filterItem li + li {padding-left: 5px; margin-left: 5px;}
+.filterWrap .filterList .filterItem li + li::before {content: '|'; display: inline-block; width: 1px; height: 15px; color: #666;}
+.filterWrap .filterList .filterItem li a {color: #444; font-size: 14px;}
+.filterWrap .filterList .filterItem li a.active{color: #222; font-weight: bold; }
+
+
+/* card  */
+.conCardTit {padding-top: 10px; font-size: 25px;}
+.cardWrap {display: flex; flex-wrap: wrap; width: 100%; justify-content: space-between; padding: 16px 0; margin-bottom: 30px;}
+.cardWrap .cardItem {width: calc((100% - 24px) / 3); height: 312px; border: 1px solid #ddd;}
+.cardWrap .cardItem + .cardItem{margin-top: 15px;}
+.cardWrap .cardItem .cardBox{padding: 20px;}
+.cardWrap .cardItem .cardBox .cardTag > span {font-size: 14px; display: inline-block; color: #0d6efd;border: 1px solid #99c3f3; line-height: 15px;}
+.cardWrap .cardItem .cardBox .cardHead > a {font-weight: bold; font-size: 20px; color: #222; display: block; overflow: hidden; word-break: break-all;}
+.cardWrap .cardItem .cardBox .cardHead > p {margin-top: 10px; color: #444; font-size: 17px; overflow: hidden; -webkit-line-clamp: 2; display: -webkit-box;}
+.cardWrap .cardItem .cardBox .cardBody{margin-top: 14px;}
+.cardWrap .cardItem .cardBox .cardBody > ul > li { color: #666; display: inline-block;}
+.cardWrap .cardItem .cardBox .cardBody > ul > li > p{font-weight: bold;}
+
+@media (max-width: 1000px){
+    .cardWrap .cardItem {width: calc((100% - 12px) / 2); height: 312px; border: 1px solid #ddd;}
+}

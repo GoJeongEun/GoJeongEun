@@ -82,6 +82,11 @@ ul, ol {list-style: none;}
 .txt_area{display: flex; justify-content: space-between;}
 
 /* btn_area */
-.btn_Primary{background: #0d6efd; border: 1px solid #d3e1fb; }
-.btn_Success{background: #eef7f0; border: 1px solid #cee9d4;}
-
+.btn_Primary{background: #0d6efd; border: 1px solid #d3e1fb; height: 35px; display: inline-block; color: #fff; box-sizing: border-box; line-height: 32px;}
+.btn_Primary:hover{background: #d3e1fb;}
+.btn_Success{background: #eef7f0; border: 1px solid #cee9d4; height: 35px; display: inline-block;color: #444; box-sizing: border-box; line-height: 32px;}
+.btn_Success:hover{background: #cee9d4;}
+.btn_Line{border: 1px solid #888; background: #fff; height: 35px; display: inline-block;color: #444; box-sizing: border-box; line-height: 32px;}
+.btn_Line:hover{background: #e0e0e0;}
+.btn_Gary{border:1px solid #d9d9d9; background: #f0f0f0; height: 35px; display: inline-block;color: #222; box-sizing: border-box; line-height: 32px;}
+.btn_Gary:hover{background: #e0e0e0;}
