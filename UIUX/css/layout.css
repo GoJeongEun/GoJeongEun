@@ -6,14 +6,15 @@ h3{font-family: 'Gwangyang'; font-size: 25px; font-weight: 600; color: #222;}
 .conCardTit {font-size: 25px; text-align: left;}
 /* filter */
 .filterWrap {display: flex; justify-content: space-between; height: 50px;}
-.filterSel{font-size: 14px; display: inline-block; box-sizing: border-box;}
+.filterSel{font-size: 14px; display: inline-block; box-sizing: border-box; width: calc(100% - 300px);}
+.filterSel select {width: calc(100% - 80px); display: inline-block;}
+.filterSel > button {width: 80px;}
 .filterWrap .filterList{display: flex; flex-wrap: wrap; align-items: center; box-sizing: border-box;}
 .filterWrap .filterList .filterItem {font-size: 14px;}
 .filterWrap .filterList .filterItem li + li {padding-left: 5px; margin-left: 5px;}
 .filterWrap .filterList .filterItem li + li::before {content: '|'; display: inline-block; width: 1px; height: 15px; color: #666;}
 .filterWrap .filterList .filterItem li a {color: #444; font-size: 14px;}
 .filterWrap .filterList .filterItem li a.active{color: #222; font-weight: bold;}
-
 
 /* card  */
 .conCardTit {padding-top: 10px; font-size: 25px;}
@@ -22,12 +23,25 @@ h3{font-family: 'Gwangyang'; font-size: 25px; font-weight: 600; color: #222;}
 .cardWrap .cardItem + .cardItem{margin-top: 15px;}
 .cardWrap .cardItem .cardBox{padding: 20px;}
 .cardWrap .cardItem .cardBox .cardTag > span {font-size: 14px; display: inline-block; color: #0d6efd;border: 1px solid #99c3f3; line-height: 15px;}
-.cardWrap .cardItem .cardBox .cardHead > a {font-weight: bold; font-size: 20px; color: #222; display: block; overflow: hidden; word-break: break-all;}
-.cardWrap .cardItem .cardBox .cardHead > p {margin-top: 10px; color: #444; font-size: 17px; overflow: hidden; -webkit-line-clamp: 2; display: -webkit-box;}
+.cardWrap .cardItem .cardBox .cardHead > a {font-weight: bold; font-size: 24px; color: #222; display: block; overflow: hidden; word-break: break-all;}
+.cardWrap .cardItem .cardBox .cardHead > p {margin-top: 10px; color: #444; font-size: 18px; overflow: hidden; -webkit-line-clamp: 2; display: -webkit-box; font-size: 18px;}
 .cardWrap .cardItem .cardBox .cardBody{margin-top: 14px;}
-.cardWrap .cardItem .cardBox .cardBody > ul > li { color: #666; display: inline-block;}
+.cardWrap .cardItem .cardBox .cardBody > ul > li { color: #666; display: inline-block; font-size: 16px;}
 .cardWrap .cardItem .cardBox .cardBody > ul > li > p{font-weight: bold;}
 
+/* 반응형  */
 @media (max-width: 1000px){
+    /* 1000px 일 때card item 2개 */
     .cardWrap .cardItem {width: calc((100% - 12px) / 2); height: 312px; border: 1px solid #ddd;}
+}
+
+ 
+@media (max-width: 640px){
+    .filterSel {width: 100%}
+    
+    /* 640px 일때 card item 1개 */
+    .cardWrap .cardItem {width: 100%; height: 312px; border: 1px solid #ddd;}
+    .cardWrap .cardItem .cardBox .cardHead > a {font-size: 20px;}
+    .cardWrap .cardItem .cardBox .cardHead > p {font-size: 17px;}
+    .cardWrap .cardItem .cardBox .cardBody > ul > li {font-size: 15px;}
 }

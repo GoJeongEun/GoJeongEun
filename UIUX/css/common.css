@@ -19,7 +19,7 @@ html, body {
   word-wrap: break-word;
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth; 
-  /* 스크롤 시 스무스한 효과  */
+  /* 스크롤 시 스무스한 효과 작동 안될 시 - overflow hidden 속성 추가*/
   
 }
 
