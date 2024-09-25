@@ -1,9 +1,10 @@
 @charset "utf-8";
 
 /* header */
-h3{font-family: 'Gwangyang'; font-size: 25px; font-weight: 600; color: #222;}
+.headerIn h3{font-family: 'Gwangyang'; font-size: 25px; font-weight: 600; color: #222;}
 /* con1 - title */
-.conCardTit {font-size: 25px; text-align: left;}
+.conCardTit {font-size: 25px; text-align: left; margin-top: 20px;}
+.conInner{padding: 80px 40px; max-width: 1400px; margin: 0 auto;}
 /* filter */
 .filterWrap {display: flex; justify-content: space-between; height: 50px;}
 .filterSel{font-size: 14px; display: inline-block; box-sizing: border-box; width: calc(100% - 300px);}
@@ -18,7 +19,7 @@ h3{font-family: 'Gwangyang'; font-size: 25px; font-weight: 600; color: #222;}
 
 /* card  */
 .conCardTit {padding-top: 10px; font-size: 25px;}
-.cardWrap {display: flex; flex-wrap: wrap; width: 100%; justify-content: space-between; padding: 16px 0; margin-bottom: 30px;}
+.cardWrap {display: flex; flex-wrap: wrap; width: 100%; max-width: 1400px;justify-content: space-between; padding: 16px 0; margin-bottom: 30px; box-sizing: border-box;}
 .cardWrap .cardItem {width: calc((100% - 24px) / 3); height: 312px; border: 1px solid #ddd;}
 .cardWrap .cardItem + .cardItem{margin-top: 15px;}
 .cardWrap .cardItem .cardBox{padding: 20px;}
@@ -29,10 +30,24 @@ h3{font-family: 'Gwangyang'; font-size: 25px; font-weight: 600; color: #222;}
 .cardWrap .cardItem .cardBox .cardBody > ul > li { color: #666; display: inline-block; font-size: 16px;}
 .cardWrap .cardItem .cardBox .cardBody > ul > li > p{font-weight: bold;}
 
+/* card two */
+.cardWrapTwo {width: 100%; display: flex; flex-wrap: wrap; box-sizing: border-box;}
+.cardWrapTwo .twoList{display: flex; gap: 20px;}
+.cardWrapTwo .twoList .twoItem {background: #fff; display: flex; padding: 20px; border-radius: 15px; flex: 1 1 33.333%;}
+.cardWrapTwo .twoList .twoItem:nth-child(1):before {background: url(/img/main/icon_creditcard1.svg) no-repeat top center; width: 80px; height: 80px; display: block; background-size: 80px;}
+.cardWrapTwo .twoList .twoItem:nth-child(2):before {background: url(/img/main/icon_creditcard2.svg) no-repeat top center; width: 80px; height: 80px; display: block; background-size: 80px;}
+.cardWrapTwo .twoList .twoItem:nth-child(3):before {background: url(/img/main/icon_creditcard3.svg) no-repeat top center; width: 80px; height: 80px; display: block; background-size: 80px;}
+.cardWrapTwo .twoList .twoItem:nth-child(4):before {background: url(/img/main/icon_creditcard4.svg) no-repeat top center; width: 80px; height: 80px; display: block; background-size: 80px;}
+.cardWrapTwo .twoList .twoItem:nth-child(5):before {background: url(/img/main/icon_creditcard5.svg) no-repeat top center; width: 80px; height: 80px; display: block; background-size: 80px;}
+.cardWrapTwo .twoList .twoItem:nth-child(6):before {background: url(/img/main/icon_creditcard6.svg) no-repeat top center; width: 80px; height: 80px; display: block; background-size: 80px;}
+.cardWrapTwo .twoList .twoItem .twoTitBox > strong{font-weight: bold; font-size: 28px; color: #222; word-break: keep-all;}
+.cardWrapTwo .twoList .twoItem .twoTitBox > p {color: #666; font-size: 20px; word-break: keep-all;}
+
 /* 반응형  */
 @media (max-width: 1000px){
     /* 1000px 일 때card item 2개 */
     .cardWrap .cardItem {width: calc((100% - 12px) / 2); height: 312px; border: 1px solid #ddd;}
+    .cardWrapTwo .twoList .twoItem {flex: 1 1 25%; flex-direction: column; gap: 15px;}
 }
 
  
