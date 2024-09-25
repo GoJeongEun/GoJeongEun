@@ -11,7 +11,7 @@
 .filterSel select {width: calc(100% - 80px); display: inline-block;}
 .filterSel > button {width: 80px;}
 .filterWrap .filterList{display: flex; flex-wrap: wrap; align-items: center; box-sizing: border-box;}
-.filterWrap .filterList .filterItem {font-size: 14px;}
+.filterWrap .filterList .filterItem {font-size: 14px; display: flex;}
 .filterWrap .filterList .filterItem li + li {padding-left: 5px; margin-left: 5px;}
 .filterWrap .filterList .filterItem li + li::before {content: '|'; display: inline-block; width: 1px; height: 15px; color: #666;}
 .filterWrap .filterList .filterItem li a {color: #444; font-size: 14px;}

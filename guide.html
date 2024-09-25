@@ -327,7 +327,7 @@
                 <tr>
                     <td colspan="4">
                         <h4>📝 디지털 정부서비스 UI/UX 가이드</h4>
-                        <p>Step1. Color</p>
+                        <p><strong>Step1. Color</strong></p> 
                         <ol>
                             <li>
                                 <dl>
@@ -462,16 +462,17 @@
                         </li>
                         <li>
                             <dl>
-                                <dt>picture 설명</dt>
+                                <dt><mark> picture 예시</mark></dt>
                                 <dd>
-                                    - 예시 <br>
-                                    <code>
-                                        <picture>
-                                            <source media="(min-width: 700px)" srcset="/examples/images/people_960.jpg">
-                                            <source media="(min-width: 400px)" srcset="/examples/images/people_575.jpg">
-                                            <img src="/examples/images/people_200.jpg" alt="People">
-                                        </picture>
-                                    </code>
+                                    <pre>
+                                        <code>
+                                            &lt;picture&gt;
+                                                &lt;source media="(min-width: 700px)" srcset="/examples/images/people_960.jpg" type="image/jpeg" &gt;
+                                                &lt;source media="(min-width: 400px)" srcset="/examples/images/people_575.jpg" type="image/jpeg"&gt;
+                                                &lt;img src="/examples/images/people_200.jpg" alt="People" type="image/jpeg"&gt;
+                                            &lt;picture&gt;
+                                        </code>
+                                    </pre>
                                 </dd>
                             </dl>
                         </li>
