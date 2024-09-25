@@ -1,0 +1,58 @@
+
+
+@font-face {
+    font-family: 'Freesentation';
+    font-style: normal;
+    font-weight: 100;
+    src: url(/fonts/Freesentation/Freesentation-1Thin.ttf) format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'Freesentation';
+    font-style: normal;
+    font-weight: 200;
+    src: url(/fonts/Freesentation/Freesentation-2Thin.ttf) format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'Freesentation';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fonts/Freesentation/Freesentation-3Light.ttf) format('ttf');
+  }
+  @font-face {
+    font-family: 'Freesentation';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/Freesentation/Freesentation-4Regular.ttf) format('ttf');
+  }
+  @font-face {
+    font-family: 'Freesentation';
+    font-style: normal;
+    font-weight: 500;
+    src: url(/fonts/Freesentation/Freesentation-5Medium.ttf) format('ttf');
+  }
+  @font-face {
+    font-family: 'Freesentation';
+    font-style: normal;
+    font-weight: 600;
+    src: url(/fonts/Freesentation/Freesentation-6SemiBold.ttf) format('ttf');
+  }
+  @font-face {
+    font-family: 'Freesentation';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/Freesentation/Freesentation-7Bold.ttf) format('ttf');
+  }
+  @font-face {
+    font-family: 'Freesentation';
+    font-style: normal;
+    font-weight: 800;
+    src: url(/fonts/Freesentation/Freesentation-8ExtraBold.ttf) format('ttf');
+  }
+  @font-face {
+    font-family: 'Freesentation';
+    font-style: normal;
+    font-weight: 900;
+    src: url(/fonts/Freesentation/Freesentation-9Black.ttf) format('ttf');
+  }
