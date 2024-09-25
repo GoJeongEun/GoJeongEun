@@ -319,5 +319,5 @@ caption {
     line-height: inherit;
   }
 }
-
+table > tr > td> li > dl > dd {word-break: keep-all;}
 /*# sourceMappingURL=c_initialize.css.map */
