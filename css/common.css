@@ -5,19 +5,6 @@
 /* font css */
 @import url('../css/font.css');
 
-@font-face {
-    font-family: 'Gwangyang';
-    font-style: normal;
-    font-weight: 400;
-    src: url(/fonts/Gwangyang/GwangyangSunshineRegular.ttf) format('ttf');
-}
-@font-face {
-    font-family: 'Gwangyang';
-    font-style: normal;
-    font-weight: 700;
-    src: url(/fonts/Gwangyang/GwangyangSunshineBold.ttf) format('ttf');
-}
-
 
 /*reset*/
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary,button{
@@ -37,7 +24,8 @@ ul, ol, li {list-style: none;}
 .wrap{min-height: 100%;display: block;}
 
 /* mark */
-mark{background: #cee9d4;}
+mark{background: #cee9d4; color: #444;}
+
 /* head */
 .head{width: 100%; display: flex; align-items: center; justify-content: space-between;}
 .head .logo {padding: 20px;}
@@ -49,8 +37,9 @@ mark{background: #cee9d4;}
 .mode_change .mode i.active {opacity: 1;}
 
 /* text-align */
-.tc{text-align: center;}
+.tc{text-align: center !important;}
 .tl{text-align: left !important;}
+.tr{text-align: right !important;}
 
 /* font-size */
 .fs10{font-size: 10px;}

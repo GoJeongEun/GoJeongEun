@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Gwangyang';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/Gwangyang/GwangyangSunshineRegular.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'Gwangyang';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/Gwangyang/GwangyangSunshineBold.ttf) format('ttf');
+}
