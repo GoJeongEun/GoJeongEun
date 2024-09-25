@@ -50,6 +50,7 @@ mark{background: #cee9d4;}
 
 /* text-align */
 .tc{text-align: center;}
+.tl{text-align: left !important;}
 
 /* font-size */
 .fs10{font-size: 10px;}

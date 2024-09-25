@@ -267,15 +267,15 @@ caption {
   display: block !important;
 }
 
-.al {
+.tl {
   text-align: left !important;
 }
 
-.ac {
+.tc {
   text-align: center !important;
 }
 
-.ar {
+.tr {
   text-align: right !important;
 }
 
