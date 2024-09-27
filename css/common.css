@@ -24,7 +24,7 @@ ul, ol, li {list-style: none;}
 .wrap{min-height: 100%;display: block;}
 
 /* mark */
-mark{background: #cee9d4; color: #444;}
+mark{background-color: #cee9d4 !important; color: #444;}
 
 /* head */
 .head{width: 100%; display: flex; align-items: center; justify-content: space-between;}
