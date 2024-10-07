@@ -61,7 +61,7 @@ const myChart = new Chart(ctx, {
         datasets: [{
         label: '# test name',
         data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
+        borderWidth: 1 //차트 border
         }, //데이터 추가 시 
         {
             label:'# test name2',
@@ -108,7 +108,7 @@ const myChart = new Chart(ctx, {
               }, {
                 label: 'My Second Dataset',
                 data: [28, 48, 40, 19, 96, 27, 100],
-                fill: true,
+                fill: '-1', //https://www.chartjs.org/docs/latest/charts/area.html option 참고
                 backgroundColor: 'rgba(54, 162, 235, 0.2)',
                 borderColor: 'rgb(54, 162, 235)',
                 pointBackgroundColor: 'rgb(54, 162, 235)',
@@ -120,7 +120,7 @@ const myChart = new Chart(ctx, {
     });
     //E 레이더 차트
 
-    //S 믹스 차트
+    //S 믹스 차트(line & bar)
     const newScatter = document.getElementById('scatter');
     const scatter = new Chart(newScatter, {
         type: 'scatter',
@@ -138,8 +138,17 @@ const myChart = new Chart(ctx, {
                 type: 'bar',
                 label: 'mix bar',
                 data: [65, 59, 90, 81, 56, 55, 40],
-                fill: true,
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                fill: true, 
+                //type: bar의 경우 차트마다 색상을 각각 줄 수 있음 
+                backgroundColor: [ 
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(255, 205, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(0, 0, 128, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                ],
                 borderColor: 'rgb(255, 99, 132)',
                 pointBackgroundColor: 'rgb(255, 99, 132)',
                 pointBorderColor: '#fff',
@@ -149,15 +158,16 @@ const myChart = new Chart(ctx, {
                 type: 'line',
                 label: 'mix line',
                 data: [28, 48, 40, 19, 96, 27, 100],
+                borderWidth: 2,
                 fill: true, //색상채우기
-                backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                borderColor: 'rgb(54, 162, 235)',
-                pointBackgroundColor: 'rgb(54, 162, 235)',
+                backgroundColor: 'rgba(174, 250, 60, 0.2)',
+                borderColor: 'rgb(174, 250, 60)',
+                pointBackgroundColor: 'rgb(174, 250, 60)',
                 pointBorderColor: '#fff',
                 pointHoverBackgroundColor: '#fff',
-                pointHoverBorderColor: 'rgb(54, 162, 235)'
+                pointHoverBorderColor: 'rgb(174, 250, 60)'
               }]
         }
     });
-    //E 레이더 차트
+    //E 믹스 차트(line & bar)
 });
