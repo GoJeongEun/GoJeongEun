@@ -8,10 +8,10 @@ const myChart = new Chart(ctx, {
         labels: ['blue', 'yellow', 'purple', 'pink'],
         datasets: [{
             label: '# of Votes',
-            data: [12, 19, 3, 5],
+            data: [12, 19, 3, 5],            
             backgroundColor: [
                
-                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.0)', // 채우기 컬러 X
                 'rgba(255, 206, 86, 0.2)',
                 'rgba(153, 102, 255, 0.2)',
                 'rgba(255, 99, 132, 0.2)'
@@ -27,6 +27,7 @@ const myChart = new Chart(ctx, {
         }]
     },
     options: {
+        maintainAspectRatio: false, // 비율이 아닌 부모의 크기에 맞춰 조절
         scales: {
            
             y: {
@@ -39,13 +40,13 @@ const myChart = new Chart(ctx, {
               display: true,
               position: 'bottom'
             },
-            title: {
+            title: { //차트 타이틀 추가
                 display: true,
                 position:'top',
                 text: "color chart",
                 font: {
                   size: 18,
-                  color:'#333'
+                  color:'#000'
                 }
               }
           }
@@ -61,7 +62,14 @@ const myChart = new Chart(ctx, {
         label: '# test name',
         data: [12, 19, 3, 5, 2, 3],
         borderWidth: 1
-        }]
+        }, //데이터 추가 시 
+        {
+            label:'# test name2',
+            data: [1, 12, 30, 2, 5, 10],
+            borderWidth:1
+        }
+    
+    ]
     },
     options: {
         scales: {
@@ -72,4 +80,84 @@ const myChart = new Chart(ctx, {
     }
     });
     //E 바 차트
+
+    //S 레이더 차트
+    const newRbar = document.getElementById('radar');
+    const radar = new Chart(newRbar, {
+        type: 'radar',
+        data: {
+            labels: [
+                'Eating',
+                'Drinking',
+                'Sleeping',
+                'Designing',
+                'Coding',
+                'Cycling',
+                'Running'
+              ],
+              datasets: [{
+                label: 'My First Dataset',
+                data: [65, 59, 90, 81, 56, 55, 40],
+                fill: true,
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgb(255, 99, 132)',
+                pointBackgroundColor: 'rgb(255, 99, 132)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgb(255, 99, 132)'
+              }, {
+                label: 'My Second Dataset',
+                data: [28, 48, 40, 19, 96, 27, 100],
+                fill: true,
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgb(54, 162, 235)',
+                pointBackgroundColor: 'rgb(54, 162, 235)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgb(54, 162, 235)'
+              }]
+        }
+    });
+    //E 레이더 차트
+
+    //S 믹스 차트
+    const newScatter = document.getElementById('scatter');
+    const scatter = new Chart(newScatter, {
+        type: 'scatter',
+        data: {
+            labels: [
+                'Eating',
+                'Drinking',
+                'Sleeping',
+                'Designing',
+                'Coding',
+                'Cycling',
+                'Running'
+              ],
+              datasets: [{
+                type: 'bar',
+                label: 'mix bar',
+                data: [65, 59, 90, 81, 56, 55, 40],
+                fill: true,
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgb(255, 99, 132)',
+                pointBackgroundColor: 'rgb(255, 99, 132)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgb(255, 99, 132)'
+              }, {
+                type: 'line',
+                label: 'mix line',
+                data: [28, 48, 40, 19, 96, 27, 100],
+                fill: true, //색상채우기
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgb(54, 162, 235)',
+                pointBackgroundColor: 'rgb(54, 162, 235)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgb(54, 162, 235)'
+              }]
+        }
+    });
+    //E 레이더 차트
 });

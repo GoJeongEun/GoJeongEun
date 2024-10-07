@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+/* 차트 영역 테스트 */
+.myChartArea {width: 400px; height: auto; margin-bottom: 20px;}
+.tBarArea{width: 400px; height: auto; margin-bottom: 20px; }
+.radarArea{width: 400px; height: auto;}
+.scatterArea{width: 400px; height: auto;}
