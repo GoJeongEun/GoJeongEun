@@ -199,6 +199,7 @@ const myChart = new Chart(ctx, {
            scales: {
            y: {
                display:false ,
+               //position:'right', //y축 위치 지정가능 - 왼쪽 디폴트값
                beginAtZero: true // y축 값 데이터에 상관없이 0부터 시작 
                }
            }
