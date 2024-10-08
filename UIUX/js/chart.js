@@ -28,6 +28,10 @@ const myChart = new Chart(ctx, {
     },
     options: {
         maintainAspectRatio: false, // 비율이 아닌 부모의 크기에 맞춰 조절
+        animations: {
+          duration: 1000,
+          loop: true
+        },
         scales: {
            
             y: {
@@ -170,4 +174,35 @@ const myChart = new Chart(ctx, {
         }
     });
     //E 믹스 차트(line & bar)
+       //S 극지방 차트
+       const newPolar = document.getElementById('polar');
+       const polar = new Chart(newPolar, {
+       type: 'polarArea',
+       data: {
+           labels: ['Red', 'Yellow', 'Green', 'blue' ,'Navy', 'Purple'],
+           datasets: [{
+           label: '#Polar Area Chart',
+           backgroundColor: [
+                'rgba(255, 99, 132, 0.5)',
+                'rgba(255, 205, 86, 0.5)',
+                'rgba(75, 192, 192, 0.5)',
+                'rgba(54, 162, 235, 0.5)',
+                'rgba(0, 0, 128, 0.5)',
+                'rgba(153, 102, 255, 0.5)',
+           ],
+           data: [12, 19, 15, 20, 13, 8],
+           borderWidth: 1 //차트 border
+           }
+         ]
+       },
+       options: {
+           scales: {
+           y: {
+               display:false ,
+               beginAtZero: true // y축 값 데이터에 상관없이 0부터 시작 
+               }
+           }
+       }
+       });
+       //E 극지방 차트
 });
